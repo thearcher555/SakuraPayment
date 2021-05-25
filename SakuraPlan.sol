@@ -64,8 +64,6 @@ return paymentAmount;
 function _calculateNetPayment(Plan memory _employeePlan) pure internal returns(uint128,uint128,uint128,uint128)
 {
     uint128 netPayment = _calculateTotalPayment(_employeePlan);
-
-
 }
 
 }
