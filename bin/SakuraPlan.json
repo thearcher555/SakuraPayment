@@ -1,0 +1,829 @@
+{
+    "contractName": "SakuraPlan",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"d:/Projects/SakuraPlan.sol\":\"SakuraPlan\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/Projects/SakuraPlan.sol\":{\"keccak256\":\"0xb892681cd395df3f733834eb69d618234d6ee26054289c3a83547162592ab650\",\"urls\":[\"bzz-raw://94e912e9e91c0cd14669626c236dca23e5a3dd5dae11e27f3119d4b7d0668ae4\",\"dweb:/ipfs/Qma4FHqWzB4tNrdTgc9ceg7QLtXwFCUzb85Hi4oTV3nwsB\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204fed341c5e15a60427329f93e401f9083313e3b4789a5c082fc5015252e9eaa064736f6c63430008040033",
+    "deployedBytecode": "6080604052600080fdfea26469706673582212204fed341c5e15a60427329f93e401f9083313e3b4789a5c082fc5015252e9eaa064736f6c63430008040033",
+    "sourceMap": "78:955:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "78:955:0:-:0;;;;;",
+    "sourcePath": "d:/Projects/SakuraPlan.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.4+commit.c7e474f2"
+    },
+    "ast": {
+        "absolutePath": "d:/Projects/SakuraPlan.sol",
+        "exportedSymbols": {
+            "SakuraPlan": [
+                64
+            ]
+        },
+        "id": 65,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".4"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 64,
+                "linearizedBaseContracts": [
+                    64
+                ],
+                "name": "SakuraPlan",
+                "nameLocation": "87:10:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "SakuraPlan.Plan",
+                        "id": 14,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "wageType",
+                                "nameLocation": "287:8:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "281:14:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint8",
+                                    "typeString": "uint8"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "281:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 5,
+                                "mutability": "mutable",
+                                "name": "workerHours",
+                                "nameLocation": "308:11:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "302:17:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint8",
+                                    "typeString": "uint8"
+                                },
+                                "typeName": {
+                                    "id": 4,
+                                    "name": "uint8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "302:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "mutability": "mutable",
+                                "name": "payRate",
+                                "nameLocation": "332:7:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "326:13:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint8",
+                                    "typeString": "uint8"
+                                },
+                                "typeName": {
+                                    "id": 6,
+                                    "name": "uint8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "326:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 9,
+                                "mutability": "mutable",
+                                "name": "commissionValue",
+                                "nameLocation": "353:15:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "346:22:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
+                                },
+                                "typeName": {
+                                    "id": 8,
+                                    "name": "uint32",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "346:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint32",
+                                        "typeString": "uint32"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 11,
+                                "mutability": "mutable",
+                                "name": "salary",
+                                "nameLocation": "383:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "375:14:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint128",
+                                    "typeString": "uint128"
+                                },
+                                "typeName": {
+                                    "id": 10,
+                                    "name": "uint128",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "375:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 13,
+                                "mutability": "mutable",
+                                "name": "commissionRate",
+                                "nameLocation": "404:14:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 14,
+                                "src": "396:22:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 12,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "396:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Plan",
+                        "nameLocation": "183:4:0",
+                        "nodeType": "StructDefinition",
+                        "scope": 64,
+                        "src": "176:246:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 62,
+                            "nodeType": "Block",
+                            "src": "641:387:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        23
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 23,
+                                            "mutability": "mutable",
+                                            "name": "paymentAmount",
+                                            "nameLocation": "658:13:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 62,
+                                            "src": "650:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint128",
+                                                "typeString": "uint128"
+                                            },
+                                            "typeName": {
+                                                "id": 22,
+                                                "name": "uint128",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "650:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint128",
+                                                    "typeString": "uint128"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 24,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "650:21:0"
+                                },
+                                {
+                                    "condition": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        },
+                                        "id": 28,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "expression": {
+                                                "id": 25,
+                                                "name": "_employeePlan",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 17,
+                                                "src": "684:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                    "typeString": "struct SakuraPlan.Plan memory"
+                                                }
+                                            },
+                                            "id": 26,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "wageType",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 3,
+                                            "src": "684:22:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "==",
+                                        "rightExpression": {
+                                            "hexValue": "30",
+                                            "id": 27,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "710:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_0_by_1",
+                                                "typeString": "int_const 0"
+                                            },
+                                            "value": "0"
+                                        },
+                                        "src": "684:27:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "falseBody": {
+                                        "condition": {
+                                            "commonType": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            },
+                                            "id": 44,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "expression": {
+                                                    "id": 41,
+                                                    "name": "_employeePlan",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 17,
+                                                    "src": "830:13:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                        "typeString": "struct SakuraPlan.Plan memory"
+                                                    }
+                                                },
+                                                "id": 42,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "wageType",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 3,
+                                                "src": "830:22:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "==",
+                                            "rightExpression": {
+                                                "hexValue": "31",
+                                                "id": 43,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "856:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_1_by_1",
+                                                    "typeString": "int_const 1"
+                                                },
+                                                "value": "1"
+                                            },
+                                            "src": "830:27:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            }
+                                        },
+                                        "falseBody": {
+                                            "condition": {
+                                                "commonType": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                },
+                                                "id": 49,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftExpression": {
+                                                    "expression": {
+                                                        "id": 46,
+                                                        "name": "_employeePlan",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 17,
+                                                        "src": "891:13:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                        }
+                                                    },
+                                                    "id": 47,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberName": "wageType",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 3,
+                                                    "src": "891:22:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    }
+                                                },
+                                                "nodeType": "BinaryOperation",
+                                                "operator": "==",
+                                                "rightExpression": {
+                                                    "hexValue": "32",
+                                                    "id": 48,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "917:1:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_2_by_1",
+                                                        "typeString": "int_const 2"
+                                                    },
+                                                    "value": "2"
+                                                },
+                                                "src": "891:27:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "falseBody": {
+                                                "condition": {
+                                                    "commonType": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    },
+                                                    "id": 54,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftExpression": {
+                                                        "expression": {
+                                                            "id": 51,
+                                                            "name": "_employeePlan",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 17,
+                                                            "src": "952:13:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                            }
+                                                        },
+                                                        "id": 52,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "wageType",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 3,
+                                                        "src": "952:22:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint8",
+                                                            "typeString": "uint8"
+                                                        }
+                                                    },
+                                                    "nodeType": "BinaryOperation",
+                                                    "operator": "==",
+                                                    "rightExpression": {
+                                                        "hexValue": "33",
+                                                        "id": 53,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "978:1:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_3_by_1",
+                                                            "typeString": "int_const 3"
+                                                        },
+                                                        "value": "3"
+                                                    },
+                                                    "src": "952:27:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "id": 56,
+                                                "nodeType": "IfStatement",
+                                                "src": "948:48:0",
+                                                "trueBody": {
+                                                    "id": 55,
+                                                    "nodeType": "Block",
+                                                    "src": "986:10:0",
+                                                    "statements": []
+                                                }
+                                            },
+                                            "id": 57,
+                                            "nodeType": "IfStatement",
+                                            "src": "887:109:0",
+                                            "trueBody": {
+                                                "id": 50,
+                                                "nodeType": "Block",
+                                                "src": "925:10:0",
+                                                "statements": []
+                                            }
+                                        },
+                                        "id": 58,
+                                        "nodeType": "IfStatement",
+                                        "src": "826:170:0",
+                                        "trueBody": {
+                                            "id": 45,
+                                            "nodeType": "Block",
+                                            "src": "864:10:0",
+                                            "statements": []
+                                        }
+                                    },
+                                    "id": 59,
+                                    "nodeType": "IfStatement",
+                                    "src": "680:316:0",
+                                    "trueBody": {
+                                        "id": 40,
+                                        "nodeType": "Block",
+                                        "src": "718:95:0",
+                                        "statements": [
+                                            {
+                                                "expression": {
+                                                    "id": 38,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftHandSide": {
+                                                        "id": 29,
+                                                        "name": "paymentAmount",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 23,
+                                                        "src": "729:13:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint128",
+                                                            "typeString": "uint128"
+                                                        }
+                                                    },
+                                                    "nodeType": "Assignment",
+                                                    "operator": "=",
+                                                    "rightHandSide": {
+                                                        "arguments": [
+                                                            {
+                                                                "commonType": {
+                                                                    "typeIdentifier": "t_uint8",
+                                                                    "typeString": "uint8"
+                                                                },
+                                                                "id": 36,
+                                                                "isConstant": false,
+                                                                "isLValue": false,
+                                                                "isPure": false,
+                                                                "lValueRequested": false,
+                                                                "leftExpression": {
+                                                                    "expression": {
+                                                                        "id": 32,
+                                                                        "name": "_employeePlan",
+                                                                        "nodeType": "Identifier",
+                                                                        "overloadedDeclarations": [],
+                                                                        "referencedDeclaration": 17,
+                                                                        "src": "753:13:0",
+                                                                        "typeDescriptions": {
+                                                                            "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                        }
+                                                                    },
+                                                                    "id": 33,
+                                                                    "isConstant": false,
+                                                                    "isLValue": true,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "memberName": "workerHours",
+                                                                    "nodeType": "MemberAccess",
+                                                                    "referencedDeclaration": 5,
+                                                                    "src": "753:25:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_uint8",
+                                                                        "typeString": "uint8"
+                                                                    }
+                                                                },
+                                                                "nodeType": "BinaryOperation",
+                                                                "operator": "*",
+                                                                "rightExpression": {
+                                                                    "expression": {
+                                                                        "id": 34,
+                                                                        "name": "_employeePlan",
+                                                                        "nodeType": "Identifier",
+                                                                        "overloadedDeclarations": [],
+                                                                        "referencedDeclaration": 17,
+                                                                        "src": "781:13:0",
+                                                                        "typeDescriptions": {
+                                                                            "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                        }
+                                                                    },
+                                                                    "id": 35,
+                                                                    "isConstant": false,
+                                                                    "isLValue": true,
+                                                                    "isPure": false,
+                                                                    "lValueRequested": false,
+                                                                    "memberName": "payRate",
+                                                                    "nodeType": "MemberAccess",
+                                                                    "referencedDeclaration": 7,
+                                                                    "src": "781:21:0",
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_uint8",
+                                                                        "typeString": "uint8"
+                                                                    }
+                                                                },
+                                                                "src": "753:49:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_uint8",
+                                                                    "typeString": "uint8"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "argumentTypes": [
+                                                                {
+                                                                    "typeIdentifier": "t_uint8",
+                                                                    "typeString": "uint8"
+                                                                }
+                                                            ],
+                                                            "id": 31,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "lValueRequested": false,
+                                                            "nodeType": "ElementaryTypeNameExpression",
+                                                            "src": "745:7:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_type$_t_uint128_$",
+                                                                "typeString": "type(uint128)"
+                                                            },
+                                                            "typeName": {
+                                                                "id": 30,
+                                                                "name": "uint128",
+                                                                "nodeType": "ElementaryTypeName",
+                                                                "src": "745:7:0",
+                                                                "typeDescriptions": {}
+                                                            }
+                                                        },
+                                                        "id": 37,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "kind": "typeConversion",
+                                                        "lValueRequested": false,
+                                                        "names": [],
+                                                        "nodeType": "FunctionCall",
+                                                        "src": "745:58:0",
+                                                        "tryCall": false,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint128",
+                                                            "typeString": "uint128"
+                                                        }
+                                                    },
+                                                    "src": "729:74:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    }
+                                                },
+                                                "id": 39,
+                                                "nodeType": "ExpressionStatement",
+                                                "src": "729:74:0"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "expression": {
+                                        "id": 60,
+                                        "name": "paymentAmount",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 23,
+                                        "src": "1009:13:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint128",
+                                            "typeString": "uint128"
+                                        }
+                                    },
+                                    "functionReturnParameters": 21,
+                                    "id": 61,
+                                    "nodeType": "Return",
+                                    "src": "1002:20:0"
+                                }
+                            ]
+                        },
+                        "id": 63,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "_calculateTotalPayment",
+                        "nameLocation": "559:22:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 18,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 17,
+                                    "mutability": "mutable",
+                                    "name": "_employeePlan",
+                                    "nameLocation": "594:13:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 63,
+                                    "src": "582:25:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Plan_$14_memory_ptr",
+                                        "typeString": "struct SakuraPlan.Plan"
+                                    },
+                                    "typeName": {
+                                        "id": 16,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 15,
+                                            "name": "Plan",
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 14,
+                                            "src": "582:4:0"
+                                        },
+                                        "referencedDeclaration": 14,
+                                        "src": "582:4:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Plan_$14_storage_ptr",
+                                            "typeString": "struct SakuraPlan.Plan"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "581:27:0"
+                        },
+                        "returnParameters": {
+                            "id": 21,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 20,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 63,
+                                    "src": "631:7:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                    },
+                                    "typeName": {
+                                        "id": 19,
+                                        "name": "uint128",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "631:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint128",
+                                            "typeString": "uint128"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "630:9:0"
+                        },
+                        "scope": 64,
+                        "src": "550:478:0",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "internal"
+                    }
+                ],
+                "scope": 65,
+                "src": "78:955:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "0:1033:0"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "12600",
+            "executionCost": "66",
+            "totalCost": "12666"
+        },
+        "internal": {
+            "_calculateTotalPayment(struct SakuraPlan.Plan memory)": "infinite"
+        }
+    }
+}
