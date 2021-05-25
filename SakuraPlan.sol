@@ -13,7 +13,6 @@ struct Plan
     // 1 = Salaried
     // 2 = Comission
     // 3 = Contactor
-    //Arthur Sucks PP
     uint8 wageType;
     uint8 workerHours;
     uint8 payRate;
