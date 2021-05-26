@@ -43,7 +43,7 @@ function _calculateTotalPayment(Plan memory _employeePlan) pure internal returns
 
     else if (_employeePlan.wageType == 2)
     {
-        paymentAmount = uint128((_employeePlan.billingPeriod/31536000) + (_employeePlan.commissionValue * _employeePlan.commissionRate));
+        paymentAmount = uint128(((_employeePlan.billingPeriod/31536000)*_employeePlan.salary) + (_employeePlan.commissionValue * _employeePlan.commissionRate));
     }
 
     else if (_employeePlan.wageType == 3)
