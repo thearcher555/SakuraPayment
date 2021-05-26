@@ -1,22 +1,26 @@
-
 pragma solidity ^0.8.4;
 import "./SakuraPlan.sol";
 
 contract SakuraStructs is SakuraPlan
 {
 
-
 struct Employee
 {
     string name;
-    address employeeAddress;
+    string position;
+    address paymentAddress;
     Plan employeePlan;
-
-    
+    bool isEmployer;
 }
 
-//Mapping of Employee to address???
+modifier isEmployer(Employee memory e) {
+    require(e.isEmployer);
+    _;
+}
 
+
+//Mapping of Employee to address???
+mapping(address => Employee) usernameToAddress;
 
 
 }

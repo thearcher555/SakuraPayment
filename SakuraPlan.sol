@@ -1,5 +1,5 @@
 pragma solidity ^0.8.4;
-
+import "./node_modules/@openzeppelin/contracts/access/Ownable.sol";
 
 //Contract to handle the payment of an employee
 contract SakuraPlan 
@@ -56,14 +56,13 @@ return paymentAmount;
 
 }
 
-
-
-//Function to calculate the net payment of an employee
-//@param _employeePlan
-//@returns paymentToEmployee, paymentForTax, paymentForSavings, paymentForBenefits
+/** 
+Function to calculate the net payment of an employee
+@param _employeePlan
+@returns paymentToEmployee, paymentForTax, paymentForSavings, paymentForBenefits
 function _calculateNetPayment(Plan memory _employeePlan) pure internal returns(uint128,uint128,uint128,uint128)
 {
     uint128 netPayment = _calculateTotalPayment(_employeePlan);
-}
+} **/
 
 }
