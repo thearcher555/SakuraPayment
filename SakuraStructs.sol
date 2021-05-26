@@ -19,7 +19,6 @@ modifier isEmployer(Employee memory e) {
 }
 
 
-//Mapping of Employee to address???
 mapping(address => Employee) usernameToAddress;
 
 
