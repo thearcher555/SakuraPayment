@@ -13,6 +13,10 @@ struct Employee
     bool isEmployer;
 }
 
+struct bee {
+    int bees;
+}
+
 modifier isEmployer(Employee memory e) {
     require(e.isEmployer);
     _;

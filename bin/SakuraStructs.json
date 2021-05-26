@@ -1,11 +1,11 @@
 {
     "contractName": "SakuraStructs",
     "abi": [],
-    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol\":\"SakuraStructs\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol\":{\"keccak256\":\"0xae07020e693bb8392e65980afdcf75126264e71a4bdb7ef7d8f63fa54c3713be\",\"urls\":[\"bzz-raw://6722097227ca5529e1dda03c2cff60e2c9930800937289cb00d17505291bbf7c\",\"dweb:/ipfs/QmYngLa5tbEhxg73U2s1rZMLvWqUoNqpNfPmxToe2iaKtv\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol\":{\"keccak256\":\"0xd57ba09ba3e09257af3c902a5d75f58772b3e49cfe8cc4c0452dfa506a207c13\",\"urls\":[\"bzz-raw://36a46b7e0db67cfb8ecc7b33cb392b5265c1b3d34477bd5df40b168a3f89dfa3\",\"dweb:/ipfs/Qma6Q7rWdnmCKpMxqsjjiVuVpjipvsEBcSfURVvt2vbd69\"]}},\"version\":1}",
-    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122008144794e10c9c387459f314779775fb23ccf45ef27e66e009d86be5bc2a667264736f6c63430008040033",
-    "deployedBytecode": "6080604052600080fdfea264697066735822122008144794e10c9c387459f314779775fb23ccf45ef27e66e009d86be5bc2a667264736f6c63430008040033",
-    "sourceMap": "55:232:1:-:0;;;;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "55:232:1:-:0;;;;;",
+    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol\":\"SakuraStructs\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol\":{\"keccak256\":\"0x9a979815b8953ba9c03aca3859988f59ea3fe45023de444158fae87246166017\",\"urls\":[\"bzz-raw://a980aceafcbfd80bcb07ec71fc0b3c129ce0cb030574ff00f0bef0a6ebd075c9\",\"dweb:/ipfs/QmYsDfqFHb8DXvj2kWJhAzoByrptfHkuYShobqKKfHFRTW\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol\":{\"keccak256\":\"0x799522abe20b98b27b73065f8bfa9d4dea96ee90db606efb029b926fce108bea\",\"urls\":[\"bzz-raw://1a8cf370e8887ece6e1ffce3822cebd3ff56ae63d0bb13e6d7fa634cc10ab61e\",\"dweb:/ipfs/QmP2Kc3NwYXbW4ovue7oA7GRimL6sqkqjaRci6ABY6kvyJ\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/node_modules/@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/node_modules/@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122034fd87068e2c1adae10bba89618d616d5fff767cd24b0ce6f956c8b045b942c564736f6c63430008040033",
+    "deployedBytecode": "6080604052600080fdfea264697066735822122034fd87068e2c1adae10bba89618d616d5fff767cd24b0ce6f956c8b045b942c564736f6c63430008040033",
+    "sourceMap": "55:359:1:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "55:359:1:-:0;;;;;",
     "sourcePath": "c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol",
     "compiler": {
         "name": "solc",
@@ -14,18 +14,24 @@
     "ast": {
         "absolutePath": "c:/Users/donut/Documents/SolidityProject/Projects/SakuraStructs.sol",
         "exportedSymbols": {
+            "Context": [
+                279
+            ],
+            "Ownable": [
+                256
+            ],
             "SakuraPlan": [
-                106
+                111
             ],
             "SakuraStructs": [
-                125
+                146
             ]
         },
-        "id": 126,
+        "id": 147,
         "nodeType": "SourceUnit",
         "nodes": [
             {
-                "id": 108,
+                "id": 113,
                 "literals": [
                     "solidity",
                     "^",
@@ -38,11 +44,11 @@
             {
                 "absolutePath": "c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol",
                 "file": "./SakuraPlan.sol",
-                "id": 109,
+                "id": 114,
                 "nameLocation": "-1:-1:-1",
                 "nodeType": "ImportDirective",
-                "scope": 126,
-                "sourceUnit": 107,
+                "scope": 147,
+                "sourceUnit": 112,
                 "src": "25:26:1",
                 "symbolAliases": [],
                 "unitAlias": ""
@@ -52,13 +58,13 @@
                 "baseContracts": [
                     {
                         "baseName": {
-                            "id": 110,
+                            "id": 115,
                             "name": "SakuraPlan",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 106,
+                            "referencedDeclaration": 111,
                             "src": "81:10:1"
                         },
-                        "id": 111,
+                        "id": 116,
                         "nodeType": "InheritanceSpecifier",
                         "src": "81:10:1"
                     }
@@ -66,10 +72,10 @@
                 "contractDependencies": [],
                 "contractKind": "contract",
                 "fullyImplemented": true,
-                "id": 125,
+                "id": 146,
                 "linearizedBaseContracts": [
-                    125,
-                    106
+                    146,
+                    111
                 ],
                 "name": "SakuraStructs",
                 "nameLocation": "64:13:1",
@@ -77,17 +83,17 @@
                 "nodes": [
                     {
                         "canonicalName": "SakuraStructs.Employee",
-                        "id": 119,
+                        "id": 128,
                         "members": [
                             {
                                 "constant": false,
-                                "id": 113,
+                                "id": 118,
                                 "mutability": "mutable",
                                 "name": "name",
-                                "nameLocation": "131:4:1",
+                                "nameLocation": "129:4:1",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 119,
-                                "src": "124:11:1",
+                                "scope": 128,
+                                "src": "122:11:1",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -95,10 +101,10 @@
                                     "typeString": "string"
                                 },
                                 "typeName": {
-                                    "id": 112,
+                                    "id": 117,
                                     "name": "string",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "124:6:1",
+                                    "src": "122:6:1",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_string_storage_ptr",
                                         "typeString": "string"
@@ -108,13 +114,40 @@
                             },
                             {
                                 "constant": false,
-                                "id": 115,
+                                "id": 120,
+                                "mutability": "mutable",
+                                "name": "position",
+                                "nameLocation": "147:8:1",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 128,
+                                "src": "140:15:1",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 119,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "140:6:1",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 122,
                                 "mutability": "mutable",
                                 "name": "paymentAddress",
-                                "nameLocation": "150:14:1",
+                                "nameLocation": "170:14:1",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 119,
-                                "src": "142:22:1",
+                                "scope": 128,
+                                "src": "162:22:1",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -122,10 +155,10 @@
                                     "typeString": "address"
                                 },
                                 "typeName": {
-                                    "id": 114,
+                                    "id": 121,
                                     "name": "address",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "142:7:1",
+                                    "src": "162:7:1",
                                     "stateMutability": "nonpayable",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_address",
@@ -136,93 +169,253 @@
                             },
                             {
                                 "constant": false,
-                                "id": 118,
+                                "id": 125,
                                 "mutability": "mutable",
                                 "name": "employeePlan",
-                                "nameLocation": "176:12:1",
+                                "nameLocation": "196:12:1",
                                 "nodeType": "VariableDeclaration",
-                                "scope": 119,
-                                "src": "171:17:1",
+                                "scope": 128,
+                                "src": "191:17:1",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Plan_$16_storage_ptr",
+                                    "typeIdentifier": "t_struct$_Plan_$17_storage_ptr",
                                     "typeString": "struct SakuraPlan.Plan"
                                 },
                                 "typeName": {
-                                    "id": 117,
+                                    "id": 124,
                                     "nodeType": "UserDefinedTypeName",
                                     "pathNode": {
-                                        "id": 116,
+                                        "id": 123,
                                         "name": "Plan",
                                         "nodeType": "IdentifierPath",
-                                        "referencedDeclaration": 16,
-                                        "src": "171:4:1"
+                                        "referencedDeclaration": 17,
+                                        "src": "191:4:1"
                                     },
-                                    "referencedDeclaration": 16,
-                                    "src": "171:4:1",
+                                    "referencedDeclaration": 17,
+                                    "src": "191:4:1",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_Plan_$16_storage_ptr",
+                                        "typeIdentifier": "t_struct$_Plan_$17_storage_ptr",
                                         "typeString": "struct SakuraPlan.Plan"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 127,
+                                "mutability": "mutable",
+                                "name": "isEmployer",
+                                "nameLocation": "220:10:1",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 128,
+                                "src": "215:15:1",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 126,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "215:4:1",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
                                     }
                                 },
                                 "visibility": "internal"
                             }
                         ],
                         "name": "Employee",
-                        "nameLocation": "107:8:1",
+                        "nameLocation": "105:8:1",
                         "nodeType": "StructDefinition",
-                        "scope": 125,
-                        "src": "100:92:1",
+                        "scope": 146,
+                        "src": "98:136:1",
                         "visibility": "public"
                     },
                     {
+                        "body": {
+                            "id": 139,
+                            "nodeType": "Block",
+                            "src": "277:40:1",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "expression": {
+                                                    "id": 134,
+                                                    "name": "e",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 131,
+                                                    "src": "292:1:1",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_struct$_Employee_$128_memory_ptr",
+                                                        "typeString": "struct SakuraStructs.Employee memory"
+                                                    }
+                                                },
+                                                "id": 135,
+                                                "isConstant": false,
+                                                "isLValue": true,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "isEmployer",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 127,
+                                                "src": "292:12:1",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 133,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                4294967278,
+                                                4294967278
+                                            ],
+                                            "referencedDeclaration": 4294967278,
+                                            "src": "284:7:1",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 136,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "284:21:1",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 137,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "284:21:1"
+                                },
+                                {
+                                    "id": 138,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "312:1:1"
+                                }
+                            ]
+                        },
+                        "id": 140,
+                        "name": "isEmployer",
+                        "nameLocation": "247:10:1",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 132,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 131,
+                                    "mutability": "mutable",
+                                    "name": "e",
+                                    "nameLocation": "274:1:1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 140,
+                                    "src": "258:17:1",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Employee_$128_memory_ptr",
+                                        "typeString": "struct SakuraStructs.Employee"
+                                    },
+                                    "typeName": {
+                                        "id": 130,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 129,
+                                            "name": "Employee",
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 128,
+                                            "src": "258:8:1"
+                                        },
+                                        "referencedDeclaration": 128,
+                                        "src": "258:8:1",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employee_$128_storage_ptr",
+                                            "typeString": "struct SakuraStructs.Employee"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "257:19:1"
+                        },
+                        "src": "238:79:1",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
                         "constant": false,
-                        "id": 124,
+                        "id": 145,
                         "mutability": "mutable",
                         "name": "usernameToAddress",
-                        "nameLocation": "262:17:1",
+                        "nameLocation": "389:17:1",
                         "nodeType": "VariableDeclaration",
-                        "scope": 125,
-                        "src": "233:46:1",
+                        "scope": 146,
+                        "src": "360:46:1",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Employee_$119_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Employee_$128_storage_$",
                             "typeString": "mapping(address => struct SakuraStructs.Employee)"
                         },
                         "typeName": {
-                            "id": 123,
+                            "id": 144,
                             "keyType": {
-                                "id": 120,
+                                "id": 141,
                                 "name": "address",
                                 "nodeType": "ElementaryTypeName",
-                                "src": "241:7:1",
+                                "src": "368:7:1",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_address",
                                     "typeString": "address"
                                 }
                             },
                             "nodeType": "Mapping",
-                            "src": "233:28:1",
+                            "src": "360:28:1",
                             "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Employee_$119_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Employee_$128_storage_$",
                                 "typeString": "mapping(address => struct SakuraStructs.Employee)"
                             },
                             "valueType": {
-                                "id": 122,
+                                "id": 143,
                                 "nodeType": "UserDefinedTypeName",
                                 "pathNode": {
-                                    "id": 121,
+                                    "id": 142,
                                     "name": "Employee",
                                     "nodeType": "IdentifierPath",
-                                    "referencedDeclaration": 119,
-                                    "src": "252:8:1"
+                                    "referencedDeclaration": 128,
+                                    "src": "379:8:1"
                                 },
-                                "referencedDeclaration": 119,
-                                "src": "252:8:1",
+                                "referencedDeclaration": 128,
+                                "src": "379:8:1",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Employee_$119_storage_ptr",
+                                    "typeIdentifier": "t_struct$_Employee_$128_storage_ptr",
                                     "typeString": "struct SakuraStructs.Employee"
                                 }
                             }
@@ -230,12 +423,12 @@
                         "visibility": "internal"
                     }
                 ],
-                "scope": 126,
-                "src": "55:232:1",
+                "scope": 147,
+                "src": "55:359:1",
                 "usedErrors": []
             }
         ],
-        "src": "0:289:1"
+        "src": "0:416:1"
     },
     "functionHashes": {},
     "gasEstimates": {
