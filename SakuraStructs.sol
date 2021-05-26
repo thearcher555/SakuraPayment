@@ -11,6 +11,7 @@ struct Employee
     address paymentAddress;
     Plan employeePlan;
     bool isEmployer;
+    int f;
 }
 
 modifier isEmployer(Employee memory e) {
