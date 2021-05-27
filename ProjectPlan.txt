@@ -1,10 +1,68 @@
+Each company will have their own version of the SakuraPayments Contract
+Each company will have their own website, hosted by Sakura SakuraPayments
+
+Demo version will be paid by Sakura Payments
+
 Centered around an array of Employee Structs
 This will be known as a 'Company'
 
 
-this is arthur's edit !!!! 
+Employee has roles: Owner, Admin, Normal
 
-THIS IS ARTHUR's SECOND EDIT !!!
+Normal:
+- View Salary
+- View Position
+- View Name
+- Return Wallet Address
+- Log In
+- Log Hours
+- View Payment Period
+- View Salary YTD
+- Download Tax
 
+Admin: Inherits all Normal functions
+- View all Employees
+- Edit Name
+- Edit Hours
+- Edit Payment Information
+- Edit Position
+- Change Wallet Address
+- Reset Contractor Payment
+- Add Employees 
+- Remove Employees
+
+Owner:  Inherits all Admin functions
+- Pay all Employees (Cooldown function)
+- Change Pay Period
+- Designate Admin
+- Remove Admin
+- Transfer Ownership
+- Delete/Wipe Contract
+- View Company Statistics
+
+General Functions:
+
+Demo:
+
+3 Different Views
+Array of [ARBITRARY VALUE] Employees
+Employee must be REPLACED if array is full
+
+Owner cannot be replaced
+
+
+Employee:
+- Views the most recently added Employee
+- Gives Error code if no employees are added
+
+Admin:
+- Loads most recently added Admin
+- Loads admin View
+- Gives Error if no Admins are added
+
+Owner:
+- Loads the single owner account
+- Cannot be deleted or added
+- Loads owner view
 
 

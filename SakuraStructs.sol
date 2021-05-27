@@ -1,3 +1,4 @@
+//SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
 import "./SakuraPlan.sol";
 
@@ -10,11 +11,22 @@ struct Employee
     string position;
     address paymentAddress;
     Plan employeePlan;
-    bool isEmployer;
+    bool isActive;
+
+    //Role 0 = Normal
+    //Role 1 = Admin
+    //Role 2 = Owner
+    uint8 role;
 }
 
-modifier isEmployer(Employee memory e) {
-    require(e.isEmployer);
+modifier isAdmin(Employee memory e) {
+    require(e.role == 1);
+    _;
+}
+
+modifier isOwner(Employee memory e)
+{
+    require(e.role == 2);
     _;
 }
 

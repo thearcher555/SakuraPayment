@@ -1,5 +1,6 @@
+//SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
-import "./node_modules/@openzeppelin/contracts/access/Ownable.sol";
+
 
 //Contract to handle the payment of an employee
 contract SakuraPlan 
@@ -20,6 +21,7 @@ struct Plan
     uint128 salary;
     uint256 commissionRate;
     uint256 billingPeriod;
+    bool isPaid;
 }
 
 
