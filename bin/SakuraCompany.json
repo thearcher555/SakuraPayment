@@ -1,0 +1,1081 @@
+{
+    "contractName": "SakuraCompany",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "companyRoster",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "position",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "paymentAddress",
+                    "type": "address"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "uint8",
+                            "name": "wageType",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "workerHours",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "payRate",
+                            "type": "uint8"
+                        },
+                        {
+                            "internalType": "uint32",
+                            "name": "commissionValue",
+                            "type": "uint32"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "salary",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "commissionRate",
+                            "type": "uint256"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "billingPeriod",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct SakuraPlan.Plan",
+                    "name": "employeePlan",
+                    "type": "tuple"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isActive",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "role",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "time",
+                    "type": "uint256"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "position",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "paymentAddress",
+                            "type": "address"
+                        },
+                        {
+                            "components": [
+                                {
+                                    "internalType": "uint8",
+                                    "name": "wageType",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint8",
+                                    "name": "workerHours",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint8",
+                                    "name": "payRate",
+                                    "type": "uint8"
+                                },
+                                {
+                                    "internalType": "uint32",
+                                    "name": "commissionValue",
+                                    "type": "uint32"
+                                },
+                                {
+                                    "internalType": "uint128",
+                                    "name": "salary",
+                                    "type": "uint128"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "commissionRate",
+                                    "type": "uint256"
+                                },
+                                {
+                                    "internalType": "uint256",
+                                    "name": "billingPeriod",
+                                    "type": "uint256"
+                                }
+                            ],
+                            "internalType": "struct SakuraPlan.Plan",
+                            "name": "employeePlan",
+                            "type": "tuple"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isActive",
+                            "type": "bool"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "role",
+                            "type": "uint8"
+                        }
+                    ],
+                    "internalType": "struct SakuraStructs.Employee",
+                    "name": "e",
+                    "type": "tuple"
+                }
+            ],
+            "name": "setBillingPeriod",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"companyRoster\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"position\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"paymentAddress\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"wageType\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"workerHours\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"payRate\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"commissionValue\",\"type\":\"uint32\"},{\"internalType\":\"uint128\",\"name\":\"salary\",\"type\":\"uint128\"},{\"internalType\":\"uint256\",\"name\":\"commissionRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"billingPeriod\",\"type\":\"uint256\"}],\"internalType\":\"struct SakuraPlan.Plan\",\"name\":\"employeePlan\",\"type\":\"tuple\"},{\"internalType\":\"bool\",\"name\":\"isActive\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"role\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"time\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"position\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"paymentAddress\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"wageType\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"workerHours\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"payRate\",\"type\":\"uint8\"},{\"internalType\":\"uint32\",\"name\":\"commissionValue\",\"type\":\"uint32\"},{\"internalType\":\"uint128\",\"name\":\"salary\",\"type\":\"uint128\"},{\"internalType\":\"uint256\",\"name\":\"commissionRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"billingPeriod\",\"type\":\"uint256\"}],\"internalType\":\"struct SakuraPlan.Plan\",\"name\":\"employeePlan\",\"type\":\"tuple\"},{\"internalType\":\"bool\",\"name\":\"isActive\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"role\",\"type\":\"uint8\"}],\"internalType\":\"struct SakuraStructs.Employee\",\"name\":\"e\",\"type\":\"tuple\"}],\"name\":\"setBillingPeriod\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Sakura Payment/SakuraPayment/SakuraCompany.sol\":\"SakuraCompany\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Sakura Payment/SakuraPayment/SakuraCompany.sol\":{\"keccak256\":\"0x9c0c7bd9b25f6816c5971bf255678e469f9d0dbfeb74a5f10a86f72a95be603b\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://1bfda2b72c11572843ecc72882cbcc852e3baa880f4551e1ce0cb49afefd0d9e\",\"dweb:/ipfs/QmbVTEQiAi1amh9uKBJmbdc6ECVYTbxWRGApLLQWLhsiNu\"]},\"c:/Sakura Payment/SakuraPayment/SakuraPlan.sol\":{\"keccak256\":\"0xcc5c08330c16aafafbefad64da03e6f12d164b5c0ee1dfc9e7c96132eb4109ff\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://88c92c69f824ed6192f812a15d964abda508fdb88d8df3d010b75f001d0a9455\",\"dweb:/ipfs/Qmc1Zi6mivVTzYHu25p8ZiZFkuY87eWP2CGbjwTyaHUY5G\"]},\"c:/Sakura Payment/SakuraPayment/SakuraStructs.sol\":{\"keccak256\":\"0xe304d9d61aecae324b8f6dce943f394a9303baa286767179baea5cd74efeaeda\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://29b17e1b2676f27b0cabd4a311f4e29d8400bb82292fd2835c9a17c92c781c84\",\"dweb:/ipfs/QmQ1L91Kkz2f7A47P71R9gLUWpJm4qDJphn37jteCaexCF\"]}},\"version\":1}",
+    "bytecode": "608060405260b180546001600160a01b03191673f187f54352ab7b807cb4966183b8d83a367f4d0517905534801561003657600080fd5b506106ae806100466000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063dadbd9431461003b578063e15c7c0e14610050575b600080fd5b61004e6100493660046103f6565b61007e565b005b61006361005e3660046103de565b6100ac565b60405161007596959493929190610521565b60405180910390f35b808060a0015160ff166001148061009c57508060a0015160ff166002145b6100a557600080fd5b5050600155565b600281601981106100bc57600080fd5b60070201805490915081906100d090610627565b80601f01602080910402602001604051908101604052809291908181526020018280546100fc90610627565b80156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050509080600101805461015e90610627565b80601f016020809104026020016040519081016040528092919081815260200182805461018a90610627565b80156101d75780601f106101ac576101008083540402835291602001916101d7565b820191906000526020600020905b8154815290600101906020018083116101ba57829003601f168201915b5050505060028301546040805160e081018252600386015460ff8082168352610100808304821660208501526201000083048216948401949094526301000000820463ffffffff1660608401526701000000000000009091046001600160801b03166080830152600487015460a0830152600587015460c083015260069096015494956001600160a01b0390931694909350808316929190041686565b80356001600160a01b038116811461028b57600080fd5b919050565b8035801515811461028b57600080fd5b600082601f8301126102b0578081fd5b813567ffffffffffffffff808211156102cb576102cb610662565b604051601f8301601f19908116603f011681019082821181831017156102f3576102f3610662565b8160405283815286602085880101111561030b578485fd5b8360208701602083013792830160200193909352509392505050565b600060e08284031215610338578081fd5b6103406105db565b905061034b826103cd565b8152610359602083016103cd565b602082015261036a604083016103cd565b6040820152606082013563ffffffff8116811461038657600080fd5b6060820152610397608083016103b6565b608082015260a082013560a082015260c082013560c082015292915050565b80356001600160801b038116811461028b57600080fd5b803560ff8116811461028b57600080fd5b6000602082840312156103ef578081fd5b5035919050565b60008060408385031215610408578081fd5b82359150602083013567ffffffffffffffff80821115610426578283fd5b90840190610180828703121561043a578283fd5b610442610604565b823582811115610450578485fd5b61045c888286016102a0565b825250602083013582811115610470578485fd5b61047c888286016102a0565b60208301525061048e60408401610274565b60408201526104a08760608501610327565b60608201526104b26101408401610290565b60808201526104c461016084016103cd565b60a08201528093505050509250929050565b60008151808452815b818110156104fb576020818501810151868301820152016104df565b8181111561050c5782602083870101525b50601f01601f19169290920160200192915050565b60006101808083526105358184018a6104d6565b9050828103602084015261054981896104d6565b91505060018060a01b038616604083015260ff855116606083015260ff602086015116608083015260ff60408601511660a083015263ffffffff60608601511660c08301526001600160801b0360808601511660e083015260a085015161010083015260c08501516101208301526105c661014083018515159052565b60ff8316610160830152979650505050505050565b60405160e0810167ffffffffffffffff811182821017156105fe576105fe610662565b60405290565b60405160c0810167ffffffffffffffff811182821017156105fe576105fe610662565b600181811c9082168061063b57607f821691505b6020821081141561065c57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220cc8d842b8db9c4525f456099467b3061d601a12842cb0564ab2edaf1550282dd64736f6c63430008040033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100365760003560e01c8063dadbd9431461003b578063e15c7c0e14610050575b600080fd5b61004e6100493660046103f6565b61007e565b005b61006361005e3660046103de565b6100ac565b60405161007596959493929190610521565b60405180910390f35b808060a0015160ff166001148061009c57508060a0015160ff166002145b6100a557600080fd5b5050600155565b600281601981106100bc57600080fd5b60070201805490915081906100d090610627565b80601f01602080910402602001604051908101604052809291908181526020018280546100fc90610627565b80156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050509080600101805461015e90610627565b80601f016020809104026020016040519081016040528092919081815260200182805461018a90610627565b80156101d75780601f106101ac576101008083540402835291602001916101d7565b820191906000526020600020905b8154815290600101906020018083116101ba57829003601f168201915b5050505060028301546040805160e081018252600386015460ff8082168352610100808304821660208501526201000083048216948401949094526301000000820463ffffffff1660608401526701000000000000009091046001600160801b03166080830152600487015460a0830152600587015460c083015260069096015494956001600160a01b0390931694909350808316929190041686565b80356001600160a01b038116811461028b57600080fd5b919050565b8035801515811461028b57600080fd5b600082601f8301126102b0578081fd5b813567ffffffffffffffff808211156102cb576102cb610662565b604051601f8301601f19908116603f011681019082821181831017156102f3576102f3610662565b8160405283815286602085880101111561030b578485fd5b8360208701602083013792830160200193909352509392505050565b600060e08284031215610338578081fd5b6103406105db565b905061034b826103cd565b8152610359602083016103cd565b602082015261036a604083016103cd565b6040820152606082013563ffffffff8116811461038657600080fd5b6060820152610397608083016103b6565b608082015260a082013560a082015260c082013560c082015292915050565b80356001600160801b038116811461028b57600080fd5b803560ff8116811461028b57600080fd5b6000602082840312156103ef578081fd5b5035919050565b60008060408385031215610408578081fd5b82359150602083013567ffffffffffffffff80821115610426578283fd5b90840190610180828703121561043a578283fd5b610442610604565b823582811115610450578485fd5b61045c888286016102a0565b825250602083013582811115610470578485fd5b61047c888286016102a0565b60208301525061048e60408401610274565b60408201526104a08760608501610327565b60608201526104b26101408401610290565b60808201526104c461016084016103cd565b60a08201528093505050509250929050565b60008151808452815b818110156104fb576020818501810151868301820152016104df565b8181111561050c5782602083870101525b50601f01601f19169290920160200192915050565b60006101808083526105358184018a6104d6565b9050828103602084015261054981896104d6565b91505060018060a01b038616604083015260ff855116606083015260ff602086015116608083015260ff60408601511660a083015263ffffffff60608601511660c08301526001600160801b0360808601511660e083015260a085015161010083015260c08501516101208301526105c661014083018515159052565b60ff8316610160830152979650505050505050565b60405160e0810167ffffffffffffffff811182821017156105fe576105fe610662565b60405290565b60405160c0810167ffffffffffffffff811182821017156105fe576105fe610662565b600181811c9082168061063b57607f821691505b6020821081141561065c57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220cc8d842b8db9c4525f456099467b3061d601a12842cb0564ab2edaf1550282dd64736f6c63430008040033",
+    "sourceMap": "97:654:0:-:0;;;240:73;;;-1:-1:-1;;;;;;240:73:0;271:42;240:73;;;97:654;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "97:654:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;567:173;;;;;;:::i;:::-;;:::i;:::-;;167:33;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;;;;;:::i;:::-;;;;;;;;567:173;643:1;414::2;:6;;;:11;;424:1;414:11;:26;;;;429:1;:6;;;:11;;439:1;429:11;414:26;406:35;;;;;;-1:-1:-1;;655:13:0::1;:20:::0;567:173::o;167:33::-;;;;;;;;;;;;;;;;;;;-1:-1:-1;167:33:0;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;167:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;167:33:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;167:33:0;;;;;;-1:-1:-1;167:33:0;;;;;;;;;:::o;14:173:3:-;82:20;;-1:-1:-1;;;;;131:31:3;;121:42;;111:2;;177:1;174;167:12;111:2;63:124;;;:::o;192:160::-;257:20;;313:13;;306:21;296:32;;286:2;;342:1;339;332:12;357:739;400:5;453:3;446:4;438:6;434:17;430:27;420:2;;475:5;468;461:20;420:2;515:6;502:20;541:18;578:2;574;571:10;568:2;;;584:18;;:::i;:::-;659:2;653:9;627:2;713:13;;-1:-1:-1;;709:22:3;;;733:2;705:31;701:40;689:53;;;757:18;;;777:22;;;754:46;751:2;;;803:18;;:::i;:::-;843:10;839:2;832:22;878:2;870:6;863:18;924:3;917:4;912:2;904:6;900:15;896:26;893:35;890:2;;;945:5;938;931:20;890:2;1013;1006:4;998:6;994:17;987:4;979:6;975:17;962:54;1036:15;;;1053:4;1032:26;1025:41;;;;-1:-1:-1;1040:6:3;410:686;-1:-1:-1;;;410:686:3:o;1101:740::-;1152:5;1200:4;1188:9;1183:3;1179:19;1175:30;1172:2;;;1222:5;1215;1208:20;1172:2;1248:21;;:::i;:::-;1239:30;;1292:27;1309:9;1292:27;:::i;:::-;1285:5;1278:42;1352:36;1384:2;1373:9;1369:18;1352:36;:::i;:::-;1347:2;1340:5;1336:14;1329:60;1421:36;1453:2;1442:9;1438:18;1421:36;:::i;:::-;1416:2;1409:5;1405:14;1398:60;1510:2;1499:9;1495:18;1482:32;1558:10;1549:7;1545:24;1536:7;1533:37;1523:2;;1584:1;1581;1574:12;1523:2;1615;1604:14;;1597:31;1661:39;1695:3;1680:19;;1661:39;:::i;:::-;1655:3;1648:5;1644:15;1637:64;1762:3;1751:9;1747:19;1734:33;1728:3;1721:5;1717:15;1710:58;1829:3;1818:9;1814:19;1801:33;1795:3;1788:5;1784:15;1777:58;1162:679;;;;:::o;1846:188::-;1914:20;;-1:-1:-1;;;;;1963:46:3;;1953:57;;1943:2;;2024:1;2021;2014:12;2039:156;2105:20;;2165:4;2154:16;;2144:27;;2134:2;;2185:1;2182;2175:12;2200:190;2259:6;2312:2;2300:9;2291:7;2287:23;2283:32;2280:2;;;2333:6;2325;2318:22;2280:2;-1:-1:-1;2361:23:3;;2270:120;-1:-1:-1;2270:120:3:o;2395:1167::-;2488:6;2496;2549:2;2537:9;2528:7;2524:23;2520:32;2517:2;;;2570:6;2562;2555:22;2517:2;2611:9;2598:23;2588:33;;2672:2;2661:9;2657:18;2644:32;2695:18;2736:2;2728:6;2725:14;2722:2;;;2757:6;2749;2742:22;2722:2;2785:22;;;;2841:6;2823:16;;;2819:29;2816:2;;;2866:6;2858;2851:22;2816:2;2897:17;;:::i;:::-;2952:2;2939:16;2980:2;2970:8;2967:16;2964:2;;;3001:6;2993;2986:22;2964:2;3033:45;3070:7;3059:8;3055:2;3051:17;3033:45;:::i;:::-;3026:5;3019:60;;3125:2;3121;3117:11;3104:25;3154:2;3144:8;3141:16;3138:2;;;3175:6;3167;3160:22;3138:2;3216:45;3253:7;3242:8;3238:2;3234:17;3216:45;:::i;:::-;3211:2;3204:5;3200:14;3193:69;;3294:31;3321:2;3317;3313:11;3294:31;:::i;:::-;3289:2;3282:5;3278:14;3271:55;3358:44;3394:7;3389:2;3385;3381:11;3358:44;:::i;:::-;3353:2;3346:5;3342:14;3335:68;3437:29;3461:3;3457:2;3453:12;3437:29;:::i;:::-;3430:4;3423:5;3419:16;3412:55;3501:30;3526:3;3522:2;3518:12;3501:30;:::i;:::-;3494:4;3487:5;3483:16;3476:56;3551:5;3541:15;;;;;2507:1055;;;;;:::o;3663:476::-;3705:3;3743:5;3737:12;3770:6;3765:3;3758:19;3795:3;3807:162;3821:6;3818:1;3815:13;3807:162;;;3883:4;3939:13;;;3935:22;;3929:29;3911:11;;;3907:20;;3900:59;3836:12;3807:162;;;3987:6;3984:1;3981:13;3978:2;;;4053:3;4046:4;4037:6;4032:3;4028:16;4024:27;4017:40;3978:2;-1:-1:-1;4121:2:3;4100:15;-1:-1:-1;;4096:29:3;4087:39;;;;4128:4;4083:50;;3713:426;-1:-1:-1;;3713:426:3:o;4224:1227::-;4526:4;4555:3;4585:2;4574:9;4567:21;4611:45;4652:2;4641:9;4637:18;4629:6;4611:45;:::i;:::-;4597:59;;4704:9;4696:6;4692:22;4687:2;4676:9;4672:18;4665:50;4732:33;4758:6;4750;4732:33;:::i;:::-;4724:41;;;4830:1;4826;4821:3;4817:11;4813:19;4805:6;4801:32;4796:2;4785:9;4781:18;4774:60;4889:4;4880:6;4874:13;4870:24;4865:2;4854:9;4850:18;4843:52;4960:4;4954:2;4946:6;4942:15;4936:22;4932:33;4926:3;4915:9;4911:19;4904:62;5031:4;5025:2;5017:6;5013:15;5007:22;5003:33;4997:3;4986:9;4982:19;4975:62;5102:10;5096:2;5088:6;5084:15;5078:22;5074:39;5068:3;5057:9;5053:19;5046:68;-1:-1:-1;;;;;5173:3:3;5165:6;5161:16;5155:23;5151:64;5145:3;5134:9;5130:19;5123:93;5271:3;5263:6;5259:16;5253:23;5247:3;5236:9;5232:19;5225:52;5332:3;5324:6;5320:16;5314:23;5308:3;5297:9;5293:19;5286:52;5347:44;5386:3;5375:9;5371:19;5363:6;3637:13;3630:21;3618:34;;3608:50;5347:44;4211:4;4200:16;;5440:3;5425:19;;4188:29;4535:916;;;;;;;;;:::o;5456:252::-;5527:2;5521:9;5569:4;5557:17;;5604:18;5589:34;;5625:22;;;5586:62;5583:2;;;5651:18;;:::i;:::-;5687:2;5680:22;5501:207;:::o;5713:248::-;5780:2;5774:9;5822:4;5810:17;;5857:18;5842:34;;5878:22;;;5839:62;5836:2;;;5904:18;;:::i;5966:380::-;6045:1;6041:12;;;;6088;;;6109:2;;6163:4;6155:6;6151:17;6141:27;;6109:2;6216;6208:6;6205:14;6185:18;6182:38;6179:2;;;6262:10;6257:3;6253:20;6250:1;6243:31;6297:4;6294:1;6287:15;6325:4;6322:1;6315:15;6179:2;;6021:325;;;:::o;6351:127::-;6412:10;6407:3;6403:20;6400:1;6393:31;6443:4;6440:1;6433:15;6467:4;6464:1;6457:15",
+    "sourcePath": "c:/Sakura Payment/SakuraPayment/SakuraCompany.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.4+commit.c7e474f2"
+    },
+    "ast": {
+        "absolutePath": "c:/Sakura Payment/SakuraPayment/SakuraCompany.sol",
+        "exportedSymbols": {
+            "SakuraCompany": [
+                66
+            ],
+            "SakuraPlan": [
+                177
+            ],
+            "SakuraStructs": [
+                235
+            ]
+        },
+        "id": 67,
+        "license": "UNLICENSED",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".4"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "39:23:0"
+            },
+            {
+                "absolutePath": "c:/Sakura Payment/SakuraPayment/SakuraStructs.sol",
+                "file": "./SakuraStructs.sol",
+                "id": 2,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 67,
+                "sourceUnit": 236,
+                "src": "64:29:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 3,
+                            "name": "SakuraStructs",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 235,
+                            "src": "123:13:0"
+                        },
+                        "id": 4,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "123:13:0"
+                    }
+                ],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 66,
+                "linearizedBaseContracts": [
+                    66,
+                    235,
+                    177
+                ],
+                "name": "SakuraCompany",
+                "nameLocation": "106:13:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 6,
+                        "mutability": "mutable",
+                        "name": "billingPeriod",
+                        "nameLocation": "151:13:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 66,
+                        "src": "143:21:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "143:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "e15c7c0e",
+                        "id": 11,
+                        "mutability": "mutable",
+                        "name": "companyRoster",
+                        "nameLocation": "187:13:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 66,
+                        "src": "167:33:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_struct$_Employee_$196_storage_$25_storage",
+                            "typeString": "struct SakuraStructs.Employee[25]"
+                        },
+                        "typeName": {
+                            "baseType": {
+                                "id": 8,
+                                "nodeType": "UserDefinedTypeName",
+                                "pathNode": {
+                                    "id": 7,
+                                    "name": "Employee",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 196,
+                                    "src": "167:8:0"
+                                },
+                                "referencedDeclaration": 196,
+                                "src": "167:8:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Employee_$196_storage_ptr",
+                                    "typeString": "struct SakuraStructs.Employee"
+                                }
+                            },
+                            "id": 10,
+                            "length": {
+                                "hexValue": "3235",
+                                "id": 9,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "number",
+                                "lValueRequested": false,
+                                "nodeType": "Literal",
+                                "src": "176:2:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_rational_25_by_1",
+                                    "typeString": "int_const 25"
+                                },
+                                "value": "25"
+                            },
+                            "nodeType": "ArrayTypeName",
+                            "src": "167:12:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_Employee_$196_storage_$25_storage_ptr",
+                                "typeString": "struct SakuraStructs.Employee[25]"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 14,
+                        "mutability": "mutable",
+                        "name": "contractOwnerAddress",
+                        "nameLocation": "248:20:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 66,
+                        "src": "240:73:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                        },
+                        "typeName": {
+                            "id": 12,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "240:7:0",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "307846313837663534333532616237423830374342343936363138336238643833413336376634443035",
+                            "id": 13,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "271:42:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                            },
+                            "value": "0xF187f54352ab7B807CB4966183b8d83A367f4D05"
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 48,
+                            "nodeType": "Block",
+                            "src": "351:212:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        19
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 19,
+                                            "mutability": "mutable",
+                                            "name": "ownerPlan",
+                                            "nameLocation": "366:9:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 48,
+                                            "src": "354:21:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Plan_$83_memory_ptr",
+                                                "typeString": "struct SakuraPlan.Plan"
+                                            },
+                                            "typeName": {
+                                                "id": 18,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 17,
+                                                    "name": "Plan",
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 83,
+                                                    "src": "354:4:0"
+                                                },
+                                                "referencedDeclaration": 83,
+                                                "src": "354:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Plan_$83_storage_ptr",
+                                                    "typeString": "struct SakuraPlan.Plan"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 29,
+                                    "initialValue": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "31",
+                                                "id": 21,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "383:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_1_by_1",
+                                                    "typeString": "int_const 1"
+                                                },
+                                                "value": "1"
+                                            },
+                                            {
+                                                "hexValue": "30",
+                                                "id": 22,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "385:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            },
+                                            {
+                                                "hexValue": "30",
+                                                "id": 23,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "387:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            },
+                                            {
+                                                "hexValue": "30",
+                                                "id": 24,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "389:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            },
+                                            {
+                                                "hexValue": "313030303030",
+                                                "id": 25,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "391:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_100000_by_1",
+                                                    "typeString": "int_const 100000"
+                                                },
+                                                "value": "100000"
+                                            },
+                                            {
+                                                "hexValue": "30",
+                                                "id": 26,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "398:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            },
+                                            {
+                                                "id": 27,
+                                                "name": "billingPeriod",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 6,
+                                                "src": "400:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_rational_1_by_1",
+                                                    "typeString": "int_const 1"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_100000_by_1",
+                                                    "typeString": "int_const 100000"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            ],
+                                            "id": 20,
+                                            "name": "Plan",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 83,
+                                            "src": "378:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_type$_t_struct$_Plan_$83_storage_ptr_$",
+                                                "typeString": "type(struct SakuraPlan.Plan storage pointer)"
+                                            }
+                                        },
+                                        "id": 28,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "structConstructorCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "378:36:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Plan_$83_memory_ptr",
+                                            "typeString": "struct SakuraPlan.Plan memory"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "354:60:0"
+                                },
+                                {
+                                    "assignments": [
+                                        32
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 32,
+                                            "mutability": "mutable",
+                                            "name": "contractOwner",
+                                            "nameLocation": "434:13:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 48,
+                                            "src": "417:30:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Employee_$196_memory_ptr",
+                                                "typeString": "struct SakuraStructs.Employee"
+                                            },
+                                            "typeName": {
+                                                "id": 31,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 30,
+                                                    "name": "Employee",
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 196,
+                                                    "src": "417:8:0"
+                                                },
+                                                "referencedDeclaration": 196,
+                                                "src": "417:8:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Employee_$196_storage_ptr",
+                                                    "typeString": "struct SakuraStructs.Employee"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 41,
+                                    "initialValue": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "416e64726577204b75727469616b",
+                                                "id": 34,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "459:16:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_607475744300cb26e87362eb67176335d9f840b77c59321f8daf5337beb8fc9c",
+                                                    "typeString": "literal_string \"Andrew Kurtiak\""
+                                                },
+                                                "value": "Andrew Kurtiak"
+                                            },
+                                            {
+                                                "hexValue": "43454f",
+                                                "id": 35,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "477:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_dc0d7a095c4e917ecbeb7deda7c942ff9744013d419e37549215a413915e421d",
+                                                    "typeString": "literal_string \"CEO\""
+                                                },
+                                                "value": "CEO"
+                                            },
+                                            {
+                                                "id": 36,
+                                                "name": "contractOwnerAddress",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 14,
+                                                "src": "484:20:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            {
+                                                "id": 37,
+                                                "name": "ownerPlan",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 19,
+                                                "src": "505:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Plan_$83_memory_ptr",
+                                                    "typeString": "struct SakuraPlan.Plan memory"
+                                                }
+                                            },
+                                            {
+                                                "hexValue": "74727565",
+                                                "id": 38,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "bool",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "515:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                "value": "true"
+                                            },
+                                            {
+                                                "hexValue": "32",
+                                                "id": 39,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "520:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_2_by_1",
+                                                    "typeString": "int_const 2"
+                                                },
+                                                "value": "2"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_607475744300cb26e87362eb67176335d9f840b77c59321f8daf5337beb8fc9c",
+                                                    "typeString": "literal_string \"Andrew Kurtiak\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_stringliteral_dc0d7a095c4e917ecbeb7deda7c942ff9744013d419e37549215a413915e421d",
+                                                    "typeString": "literal_string \"CEO\""
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_struct$_Plan_$83_memory_ptr",
+                                                    "typeString": "struct SakuraPlan.Plan memory"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_rational_2_by_1",
+                                                    "typeString": "int_const 2"
+                                                }
+                                            ],
+                                            "id": 33,
+                                            "name": "Employee",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 196,
+                                            "src": "450:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_type$_t_struct$_Employee_$196_storage_ptr_$",
+                                                "typeString": "type(struct SakuraStructs.Employee storage pointer)"
+                                            }
+                                        },
+                                        "id": 40,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "structConstructorCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "450:72:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employee_$196_memory_ptr",
+                                            "typeString": "struct SakuraStructs.Employee memory"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "417:105:0"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 46,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "baseExpression": {
+                                                "id": 42,
+                                                "name": "companyRoster",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 11,
+                                                "src": "525:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_struct$_Employee_$196_storage_$25_storage",
+                                                    "typeString": "struct SakuraStructs.Employee storage ref[25] storage ref"
+                                                }
+                                            },
+                                            "id": 44,
+                                            "indexExpression": {
+                                                "hexValue": "30",
+                                                "id": 43,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "539:1:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_0_by_1",
+                                                    "typeString": "int_const 0"
+                                                },
+                                                "value": "0"
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "525:16:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Employee_$196_storage",
+                                                "typeString": "struct SakuraStructs.Employee storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 45,
+                                            "name": "contractOwner",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 32,
+                                            "src": "544:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Employee_$196_memory_ptr",
+                                                "typeString": "struct SakuraStructs.Employee memory"
+                                            }
+                                        },
+                                        "src": "525:32:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employee_$196_storage",
+                                            "typeString": "struct SakuraStructs.Employee storage ref"
+                                        }
+                                    },
+                                    "id": 47,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "525:32:0"
+                                }
+                            ]
+                        },
+                        "id": 49,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setAsOwner",
+                        "nameLocation": "327:10:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 15,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "337:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 16,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "351:0:0"
+                        },
+                        "scope": 66,
+                        "src": "318:245:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 64,
+                            "nodeType": "Block",
+                            "src": "648:92:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 62,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 60,
+                                            "name": "billingPeriod",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 6,
+                                            "src": "655:13:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 61,
+                                            "name": "time",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 51,
+                                            "src": "671:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "655:20:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 63,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "655:20:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "dadbd943",
+                        "id": 65,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "arguments": [
+                                    {
+                                        "id": 57,
+                                        "name": "e",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 54,
+                                        "src": "643:1:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employee_$196_memory_ptr",
+                                            "typeString": "struct SakuraStructs.Employee memory"
+                                        }
+                                    }
+                                ],
+                                "id": 58,
+                                "kind": "modifierInvocation",
+                                "modifierName": {
+                                    "id": 56,
+                                    "name": "isAdmin",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 215,
+                                    "src": "635:7:0"
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "635:10:0"
+                            }
+                        ],
+                        "name": "setBillingPeriod",
+                        "nameLocation": "576:16:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 55,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 51,
+                                    "mutability": "mutable",
+                                    "name": "time",
+                                    "nameLocation": "601:4:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 65,
+                                    "src": "593:12:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 50,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "593:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 54,
+                                    "mutability": "mutable",
+                                    "name": "e",
+                                    "nameLocation": "623:1:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 65,
+                                    "src": "607:17:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Employee_$196_memory_ptr",
+                                        "typeString": "struct SakuraStructs.Employee"
+                                    },
+                                    "typeName": {
+                                        "id": 53,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 52,
+                                            "name": "Employee",
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 196,
+                                            "src": "607:8:0"
+                                        },
+                                        "referencedDeclaration": 196,
+                                        "src": "607:8:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Employee_$196_storage_ptr",
+                                            "typeString": "struct SakuraStructs.Employee"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "592:33:0"
+                        },
+                        "returnParameters": {
+                            "id": 59,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "648:0:0"
+                        },
+                        "scope": 66,
+                        "src": "567:173:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 67,
+                "src": "97:654:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "39:712:0"
+    },
+    "functionHashes": {
+        "companyRoster(uint256)": "e15c7c0e",
+        "setBillingPeriod(uint256,(string,string,address,(uint8,uint8,uint8,uint32,uint128,uint256,uint256),bool,uint8))": "dadbd943"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "342000",
+            "executionCost": "21216",
+            "totalCost": "363216"
+        },
+        "external": {
+            "companyRoster(uint256)": "infinite",
+            "setBillingPeriod(uint256,(string,string,address,(uint8,uint8,uint8,uint32,uint128,uint256,uint256),bool,uint8))": "infinite"
+        },
+        "internal": {
+            "setAsOwner()": "infinite"
+        }
+    }
+}

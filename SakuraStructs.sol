@@ -19,6 +19,7 @@ struct Employee
     uint8 role;
 }
 
+
 modifier isAdmin(Employee memory e) {
     require(e.role == 1 || e.role == 2);
     _;
@@ -29,6 +30,8 @@ modifier isOwner(Employee memory e)
     require(e.role == 2);
     _;
 }
+
+
 
 
 mapping(address => Employee) usernameToAddress;

@@ -21,7 +21,6 @@ struct Plan
     uint128 salary;
     uint256 commissionRate;
     uint256 billingPeriod;
-    bool isPaid;
 }
 
 
