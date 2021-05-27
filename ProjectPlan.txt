@@ -55,7 +55,6 @@ Ethereum API will display each of the transactions in another window
 
 Owner cannot be replaced
 
-
 Employee:
 - Views the most recently added Employee
 - Gives Error code if no employees are added

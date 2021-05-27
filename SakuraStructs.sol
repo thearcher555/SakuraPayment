@@ -20,7 +20,7 @@ struct Employee
 }
 
 modifier isAdmin(Employee memory e) {
-    require(e.role == 1);
+    require(e.role == 1 || e.role == 2);
     _;
 }
 
