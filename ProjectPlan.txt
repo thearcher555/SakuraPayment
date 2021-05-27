@@ -47,6 +47,11 @@ Demo:
 3 Different Views
 Array of [ARBITRARY VALUE] Employees
 Employee must be REPLACED if array is full
+All employees will be given a set address owned by Sakura Payments
+
+
+Pay function will 'Pay' all employees at fixed amount of ether regaurdless of salary/wage
+Ethereum API will display each of the transactions in another window
 
 Owner cannot be replaced
 
