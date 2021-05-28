@@ -21,7 +21,7 @@ Normal:
 - Download Tax
 
 Admin: Inherits all Normal functions
-- View all Employees
+- View all Employees (need a function that returns # of active accounts)
 - Edit Name
 - Edit Hours
 - Edit Payment Information

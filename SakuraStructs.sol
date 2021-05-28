@@ -9,7 +9,7 @@ struct Employee
 {
     string name;
     string position;
-    uint32 employeeID;
+    uint256 employeeID;
     address paymentAddress;
     Plan employeePlan;
     bool isActive;
@@ -21,18 +21,19 @@ struct Employee
 }
 
 
-modifier isAdmin(Employee memory e) {
-    require(e.role == 1 || e.role == 2);
+modifier isAdmin(uint256 id) {
+    require(idToEmployee[id].role == 1 || idToEmployee[id].role == 2);
     _;
 }
 
-modifier isOwner(Employee memory e)
+modifier isOwner(uint256 id)
 {
-    require(e.role == 2);
+    require(idToEmployee[id].role == 2);
     _;
 }
 
-
+// goat
+mapping(uint256 => Employee) public idToEmployee;
 
 
 }
