@@ -71,9 +71,11 @@ Owner:
 
 
 TO DO: 
+- change addEmployee to modify existing Employee struct, not make another
 - isValid modifier for IDs
 - return value on all functions to communicate with web3js
 - write isValid function that returns true/false based on ID
+
 
 
 
