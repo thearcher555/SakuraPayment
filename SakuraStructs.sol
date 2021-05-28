@@ -21,17 +21,6 @@ struct Employee
 }
 
 
-modifier isAdmin(uint256 id) {
-    require(idToEmployee[id].role == 1 || idToEmployee[id].role == 2);
-    _;
-}
-
-modifier isOwner(uint256 id)
-{
-    require(idToEmployee[id].role == 2);
-    _;
-}
-
 // goat
 mapping(uint256 => Employee) public idToEmployee;
 

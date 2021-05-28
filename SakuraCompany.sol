@@ -77,10 +77,42 @@ function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal isAdmin
     idToEmployee[idToBeDeleted].isActive = false;
 }
 
-function displayEmployees() internal view
-{
-
+//TO DO
+function isValid(uint256 id) internal returns (bool) {
 }
+
+// plan starts at 5th return val
+// FIRST INT TO CHECK FOR VALIDITY
+function getProfile(uint256 id) internal view returns (
+    bool,
+    string memory,
+    string memory,
+    uint256,
+    address,
+    uint8,
+    uint8,
+    uint8,
+    uint32,
+    uint128, 
+    uint256,
+    uint8) {
+       
+    return(true, idToEmployee[id].name, idToEmployee[id].position, idToEmployee[id].employeeID, idToEmployee[id].paymentAddress, 
+    idToEmployee[id].employeePlan.wageType, idToEmployee[id].employeePlan.workerHours, idToEmployee[id].employeePlan.payRate,
+    idToEmployee[id].employeePlan.commissionValue, idToEmployee[id].employeePlan.salary, idToEmployee[id].employeePlan.commissionRate, idToEmployee[id].role);
+}
+
+function getActiveEmployees() internal view returns (uint) {
+    uint count = 0;
+
+    for (uint x = 0; x < companyRoster.length; x++) {
+        if (companyRoster[x].isActive == true) {
+            count++;
+        }
+    }
+    return count;
+}
+
 
 function setAdmin(uint256 adminID) internal isOwner(adminID)
 {
@@ -110,7 +142,16 @@ function changeEmployeeBillingPeriod(uint256 adminID) internal isAdmin(adminID)
 } */
 
 
+modifier isAdmin(uint256 id) {
+    require(idToEmployee[id].role == 1 || idToEmployee[id].role == 2);
+    _;
+}
 
+modifier isOwner(uint256 id) 
+{
+    require(idToEmployee[id].role == 2);
+    _;
+}
 
 
 }

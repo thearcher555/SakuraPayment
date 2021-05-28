@@ -28,8 +28,8 @@ Admin: Inherits all Normal functions
 - Edit Position
 - Change Wallet Address
 - Reset Contractor Payment
-- Add Employees 
-- Remove Employees
+X Add Employees
+X Remove Employees
 
 Owner:  Inherits all Admin functions
 - Pay all Employees (Cooldown function)
@@ -68,5 +68,12 @@ Owner:
 - Loads the single owner account
 - Cannot be deleted or added
 - Loads owner view
+
+
+TO DO: 
+- isValid modifier for IDs
+- return value on all functions to communicate with web3js
+- write isValid function that returns true/false based on ID
+
 
 
