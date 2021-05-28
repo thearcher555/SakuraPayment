@@ -9,6 +9,7 @@ struct Employee
 {
     string name;
     string position;
+    uint32 employeeID;
     address paymentAddress;
     Plan employeePlan;
     bool isActive;
@@ -32,9 +33,6 @@ modifier isOwner(Employee memory e)
 }
 
 
-
-
-mapping(address => Employee) usernameToAddress;
 
 
 }

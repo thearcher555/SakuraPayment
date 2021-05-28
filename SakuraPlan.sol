@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.4;
-
+import "./node_modules/@openzeppelin/contracts/access/Ownable.sol";
 
 //Contract to handle the payment of an employee
-contract SakuraPlan 
+contract SakuraPlan is Ownable
 {
 
 
