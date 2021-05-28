@@ -71,6 +71,7 @@ function addEmployee(uint256 adminID,
     }
 }
 
+// fuuuuuuuuck it
 function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal isAdmin(adminID)
 {
     idToEmployee[idToBeDeleted].isActive = false;
