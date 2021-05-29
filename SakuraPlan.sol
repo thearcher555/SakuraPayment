@@ -15,8 +15,8 @@ struct Plan
     // 2 = Comission
     // 3 = Contactor
     uint8 wageType;
-    uint8 workerHours;
-    uint8 payRate;
+    uint32 workerHours;
+    uint32 payRate;
     uint32 commissionValue;
     uint128 salary;
     uint256 commissionRate;

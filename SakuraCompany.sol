@@ -8,20 +8,18 @@ contract SakuraCompany is SakuraStructs
 uint256 billingPeriod;
 uint256 idCount;
 Employee[25] public companyRoster;
-bool isOwnerSet = false;
 
 //Feel free to send some Ether ;)
 address contractOwnerAddress = 0xF187f54352ab7B807CB4966183b8d83A367f4D05;
+
 
 //This function will run when the owner view is selected
 //The first time the script is run, element 0 in the employees
 //array will be set at the owner with premade data
 //This 'employee' cannot be deleted, and the function
 //will not run again as the 'isOwnerSet' variable will be true
-function initContract(uint256 period) internal
+constructor (uint256 period) 
 {
-    require(isOwnerSet == false);
-    isOwnerSet = true;
     billingPeriod = period;
     idCount = 1;
     companyRoster[0] = Employee("Andrew Kurtiak", "CEO", idCount, contractOwnerAddress,Plan(1,0,0,0,100000,0,billingPeriod),true,2);
@@ -45,7 +43,7 @@ function findSlot() internal view returns(int) {
     return temp;
 }
 
-// Returns -1 if no slot found, else returns first index of added employee
+// Returns false if no slot found or access is denied, else returns true is employee is pushed
 function addEmployee(uint256 adminID, 
     string memory name, 
     string memory position, 
@@ -54,32 +52,43 @@ function addEmployee(uint256 adminID,
     uint8 payRate,
     uint32 commissionValue,
     uint128 salary,
-    uint256 commissionRate) internal isAdmin(adminID) returns (int)
+    uint256 commissionRate) internal returns (bool)
 {
     int index = findSlot();
-    if (index < 0) {
-        return -1;
+    if(isAdmin(adminID) == false)
+    {
+        return false;
     }
 
-    else {
+    if (index < 0) {
+        return false;
+    }
 
     companyRoster[uint(index)] = Employee(name, position, idCount, contractOwnerAddress,
     Plan(wageType, workerHours, payRate, commissionValue, salary, commissionRate, billingPeriod),true,0);
     idToEmployee[idCount] = companyRoster[uint(index)];
     idCount++;
-        return index;
-    }
+
+        return true;
+    
 }
 
-// fuuuuuuuuck it
-function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal isAdmin(adminID)
+//Sets employee's isActive to false
+//This will then exclude them from the display
+//If employee array is full, the next add call will overwrite employee data
+function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal returns(bool)
 {
-    idToEmployee[idToBeDeleted].isActive = false;
+    bool canRun = (isAdmin(adminID) && isValid(idToBeDeleted));
+
+    if (canRun)
+    {
+        idToEmployee[idToBeDeleted].isActive = false;
+    }
+
+    return (canRun);
 }
 
-//TO DO
-function isValid(uint256 id) internal returns (bool) {
-}
+
 
 // plan starts at 5th return val
 // FIRST INT TO CHECK FOR VALIDITY
@@ -90,16 +99,27 @@ function getProfile(uint256 id) internal view returns (
     uint256,
     address,
     uint8,
-    uint8,
-    uint8,
+    uint32,
+    uint32,
     uint32,
     uint128, 
     uint256,
     uint8) {
        
-    return(true, idToEmployee[id].name, idToEmployee[id].position, idToEmployee[id].employeeID, idToEmployee[id].paymentAddress, 
-    idToEmployee[id].employeePlan.wageType, idToEmployee[id].employeePlan.workerHours, idToEmployee[id].employeePlan.payRate,
-    idToEmployee[id].employeePlan.commissionValue, idToEmployee[id].employeePlan.salary, idToEmployee[id].employeePlan.commissionRate, idToEmployee[id].role);
+       bool temp = isValid(id);
+
+       if (temp)
+       {
+            return(temp, idToEmployee[id].name, idToEmployee[id].position, idToEmployee[id].employeeID, idToEmployee[id].paymentAddress, 
+         idToEmployee[id].employeePlan.wageType, idToEmployee[id].employeePlan.workerHours, idToEmployee[id].employeePlan.payRate,
+         idToEmployee[id].employeePlan.commissionValue, idToEmployee[id].employeePlan.salary, idToEmployee[id].employeePlan.commissionRate, idToEmployee[id].role);
+       }
+
+       else 
+       {
+        return(temp, "", "", 0, contractOwnerAddress,0, 0, 0,0, 0, 0, 0);
+       }
+    
 }
 
 function getActiveEmployees() internal view returns (uint) {
@@ -114,16 +134,18 @@ function getActiveEmployees() internal view returns (uint) {
 }
 
 
-function setAdmin(uint256 adminID) internal isOwner(adminID)
+/** 
+function setAdmin(uint256 adminID) internal 
 {
 
 }
 
 //This function should never actually work in demo
-function setNewOwner(uint256 adminID) internal isOwner(adminID)
+function setNewOwner(uint256 adminID) internal 
 {
 
 }
+**/
 
 /*
 function setBillingPeriod(uint256 time, uint256 adminID) internal isAdmin(adminID) 
@@ -142,16 +164,159 @@ function changeEmployeeBillingPeriod(uint256 adminID) internal isAdmin(adminID)
 } */
 
 
-modifier isAdmin(uint256 id) {
-    require(idToEmployee[id].role == 1 || idToEmployee[id].role == 2);
-    _;
+//@returns isAdmin, isValid
+function isAdmin(uint256 id) view internal returns(bool){
+
+    bool valid = isValid(id);
+
+    if(valid)
+    {
+        if (idToEmployee[id].role == 1 || idToEmployee[id].role == 2)
+        {
+            return (true);
+        }
+
+    }
+
+    return (false);
 }
 
-modifier isOwner(uint256 id) 
+//@returns isOwner, isValid
+function isOwner(uint256 id) view internal returns(bool)
 {
-    require(idToEmployee[id].role == 2);
-    _;
+
+    bool valid = isValid(id);
+
+    if(valid)
+    {
+        if (idToEmployee[id].role == 2)
+        {
+            return (true);
+        }
+    }
+    return (false);
 }
+
+//This function acts as a modifier, anything calling it should break if returns false
+function isValid(uint256 id) internal view returns (bool) 
+{
+    for (uint a = 0; a < companyRoster.length; a++)
+    {
+        if(companyRoster[a].employeeID == id && companyRoster[a].isActive == true)
+        {
+            return true;
+        }
+    }
+   
+   return false;
+}
+
+
+//ANNOYING SET FUNCTIONS
+function setName(uint256 adminID, uint256 id, string memory _name) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].name = _name;
+    return true;
+}
+
+function setPosition(uint256 adminID, uint256 id, string memory _position) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].position = _position;
+    return true;
+}
+
+
+function setAddress(uint256 adminID, uint256 id, address _paymentAddress) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].paymentAddress = _paymentAddress;
+    return true;
+}
+
+
+function setWageType(uint256 adminID, uint256 id, uint8 _wageType) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.wageType = _wageType;
+    return true;
+}
+
+
+function setWorkerHours(uint256 adminID, uint256 id, uint32 _workerHours) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.workerHours = _workerHours;
+    return true;
+}
+
+function setPayRate(uint256 adminID, uint256 id, uint32 _payRate) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.payRate = _payRate;
+    return true;
+}
+
+function setCommissionValue(uint256 adminID, uint256 id, uint32 _commissionValue) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.commissionValue = _commissionValue;
+    return true;
+}
+
+function setSalary(uint256 adminID, uint256 id, uint128 _salary) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.salary = _salary;
+    return true;
+}
+
+function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate) internal returns(bool)
+{
+    if (isAdmin(adminID) == false || isValid(id) == false)
+    {
+        return false;
+    }
+
+    idToEmployee[id].employeePlan.commissionRate = _commissionRate;
+    return true;
+}
+
+
+
 
 
 }
