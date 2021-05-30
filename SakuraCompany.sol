@@ -13,14 +13,13 @@ Employee[25] public companyRoster;
 address contractOwnerAddress = 0xF187f54352ab7B807CB4966183b8d83A367f4D05;
 
 
-//This function will run when the owner view is selected
-//The first time the script is run, element 0 in the employees
-//array will be set at the owner with premade data
-//This 'employee' cannot be deleted, and the function
-//will not run again as the 'isOwnerSet' variable will be true
-constructor (uint256 period) 
+//This method will run as the contract is deployed for the first time
+//It will initialize the array of employees to a blank employee
+//Index 0 of the array will instead point to the owner which cannot be
+//marked for deletion. Id count is incremented each time an employee is created
+constructor () 
 {
-    billingPeriod = period;
+    billingPeriod = 2 weeks;
     idCount = 1;
     companyRoster[0] = Employee("Andrew Kurtiak", "CEO", idCount, contractOwnerAddress,Plan(1,0,0,0,100000,0,billingPeriod),true,2);
     idToEmployee[1] = companyRoster[0];
@@ -122,6 +121,7 @@ function getProfile(uint256 id) internal view returns (
     
 }
 
+//Returns number of active employees for JS to display
 function getActiveEmployees() internal view returns (uint) {
     uint count = 0;
 
@@ -134,34 +134,71 @@ function getActiveEmployees() internal view returns (uint) {
 }
 
 
-/** 
-function setAdmin(uint256 adminID) internal 
+//Sets a new admin given the adminID isAdmin and newId isValid
+//@return function success
+function setAdmin(uint256 adminID, uint256 id) internal returns(bool)
 {
+    bool canRun = isAdmin(adminID);
 
+    if(canRun)
+    {
+        if (idToEmployee[id].role == 0)
+        {
+            idToEmployee[id].role = 1;
+        }
+
+        else 
+        {
+            canRun = false;
+        }
+    }
+
+    return (canRun);
 }
+
+
 
 //This function should never actually work in demo
-function setNewOwner(uint256 adminID) internal 
+//Intended to set a new owner, changing the current owner
+function setNewOwner(uint256 adminID, uint256 newOwner) internal returns(bool)
 {
+    bool canRun = isValid(newOwner) && isOwner(adminID) && (adminID != newOwner);
+
+    if (false)
+    {
+        idToEmployee[adminID].role = 1;
+        idToEmployee[newOwner].role = 2;
+        return (canRun);
+    }
+
+    return (false);
 
 }
-**/
 
-/*
-function setBillingPeriod(uint256 time, uint256 adminID) internal isAdmin(adminID) 
-{
-    billingPeriod = time;
-    changeEmployeeBillingPeriod(e);
-} */
 
-/* 
-function changeEmployeeBillingPeriod(uint256 adminID) internal isAdmin(adminID)
+//Function takes in new billing period and sets all employees to billing period
+function setBillingPeriod(uint256 time, uint256 adminID) internal 
 {
-    for (uint8 a = 0; a < uint8(companyRoster.length); a++)
+    if (isAdmin(adminID))
     {
-       companyRoster[a].employeePlan.billingPeriod = billingPeriod; 
+    billingPeriod = time;
+    changeEmployeeBillingPeriod(adminID);
     }
-} */
+} 
+
+//Helper method for setBillingPeriod
+function changeEmployeeBillingPeriod(uint256 adminID) internal
+{
+
+    if (isAdmin(adminID))
+    {
+        for (uint8 a = 0; a < uint8(companyRoster.length); a++)
+        {
+            companyRoster[a].employeePlan.billingPeriod = billingPeriod; 
+        }
+
+    }
+}
 
 
 //@returns isAdmin, isValid
@@ -314,9 +351,5 @@ function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate)
     idToEmployee[id].employeePlan.commissionRate = _commissionRate;
     return true;
 }
-
-
-
-
 
 }
