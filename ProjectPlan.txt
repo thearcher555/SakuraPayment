@@ -10,34 +10,34 @@ This will be known as a 'Company'
 Employee has roles: Owner, Admin, Normal
 
 Normal:
-- View Salary
-- View Position
-- View Name
-- Return Wallet Address
+X View Salary
+X View Position
+X View Name
+X Return Wallet Address
 - Log In
 - Log Hours
-- View Payment Period
+X View Payment Period
 - View Salary YTD
 - Download Tax
 
 Admin: Inherits all Normal functions
 - View all Employees (need a function that returns # of active accounts)
-- Edit Name
-- Edit Hours
-- Edit Payment Information
-- Edit Position
-- Change Wallet Address
+X Edit Name
+X Edit Hours
+X Edit Payment Information
+X Edit Position
+X Change Wallet Address
 - Reset Contractor Payment
 X Add Employees
 X Remove Employees
 
 Owner:  Inherits all Admin functions
 - Pay all Employees (Cooldown function)
-- Change Pay Period
+X Change Pay Period
 - Designate Admin
-- Remove Admin
-- Transfer Ownership
-- Delete/Wipe Contract
+X Remove Admin
+X Transfer Ownership
+- Delete/Wipe Contract (maybe skip?)
 - View Company Statistics
 
 General Functions:

@@ -10,7 +10,7 @@ struct Employee
     string name;
     string position;
     uint256 employeeID;
-    address paymentAddress;
+    address payable paymentAddress;
     Plan employeePlan;
     bool isActive;
 

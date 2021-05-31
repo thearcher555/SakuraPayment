@@ -54,18 +54,18 @@
             "type": "function"
         }
     ],
-    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"d:/SakuraPayments/SakuraPayment/SakuraPlan.sol\":\"SakuraPlan\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/SakuraPayments/SakuraPayment/SakuraPlan.sol\":{\"keccak256\":\"0x8bbd1bd4a78c2b86d80b3c8aa97a989cb4ef92730f4be0c0c5e5c92eea05752a\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cbd51ad41196b2ed8861d7e1428dc77d83d20151236cd7629c80a1f8dbcf3585\",\"dweb:/ipfs/QmXmJdNDbWSPPU1EmvnwssmgsyBn4S7GrDqp7w3k1qkvy8\"]},\"d:/SakuraPayments/SakuraPayment/node_modules/@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xff947df457c211856a24ba4496e247e5320a22f4440c7c17c0a69370334bfd8f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6c4c65ef66c4a9e66f423cba92633b04b8b84827f340a43457693f3b5749d4f\",\"dweb:/ipfs/QmPozCmBaHoYCp3dDshZd8Wg54n7uDpvH6XMxCnhEik9FE\"]},\"d:/SakuraPayments/SakuraPayment/node_modules/@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xd66de64ebb51d57721ac10bb1571dc8b2798cd48723b8222341bc0e65372e050\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6b561766010211e50ffdc7363fb2227d15e1c846d1ee9ff33532a86fce8b6d5\",\"dweb:/ipfs/Qme61ahYQqCyYLhQmF4cyKe539E9f4HK1d9PrEb4MDKEtr\"]}},\"version\":1}",
-    "bytecode": "608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a3506102a9806100616000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063715018a6146100465780638da5cb5b14610050578063f2fde38b1461006f575b600080fd5b61004e610082565b005b600054604080516001600160a01b039092168252519081900360200190f35b61004e61007d366004610245565b61012b565b6000546001600160a01b031633146100e15760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146101855760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016100d8565b6001600160a01b0381166101ea5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016100d8565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b600060208284031215610256578081fd5b81356001600160a01b038116811461026c578182fd5b939250505056fea2646970667358221220ea33a440c7c7c550fb4eb7521223a5104d394f4c054b8113d8bbbf976881284964736f6c63430008040033",
-    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063715018a6146100465780638da5cb5b14610050578063f2fde38b1461006f575b600080fd5b61004e610082565b005b600054604080516001600160a01b039092168252519081900360200190f35b61004e61007d366004610245565b61012b565b6000546001600160a01b031633146100e15760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146101855760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016100d8565b6001600160a01b0381166101ea5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016100d8565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b600060208284031215610256578081fd5b81356001600160a01b038116811461026c578182fd5b939250505056fea2646970667358221220ea33a440c7c7c550fb4eb7521223a5104d394f4c054b8113d8bbbf976881284964736f6c63430008040033",
-    "sourceMap": "184:1654:0:-:0;;;;;;;;;;;;-1:-1:-1;893:17:1;936:18;;-1:-1:-1;;;;;;936:18:1;681:10:2;936:18:1;;;;;970:43;;681:10:2;;;;970:43:1;;893:17;;970:43;867:154;184:1654:0;;;;;;",
-    "deployedSourceMap": "184:1654:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1753:148:1;;;:::i;:::-;;1102:87;1148:7;1175:6;1102:87;;;-1:-1:-1;;;;;1175:6:1;;;471:51:3;;1102:87:1;;;;;459:2:3;1102:87:1;;;2056:244;;;;;;:::i;:::-;;:::i;1753:148::-;1148:7;1175:6;-1:-1:-1;;;;;1175:6:1;681:10:2;1322:23:1;1314:68;;;;-1:-1:-1;;;1314:68:1;;1142:2:3;1314:68:1;;;1124:21:3;;;1161:18;;;1154:30;1220:34;1200:18;;;1193:62;1272:18;;1314:68:1;;;;;;;;;1860:1:::1;1844:6:::0;;1823:40:::1;::::0;-1:-1:-1;;;;;1844:6:1;;::::1;::::0;1823:40:::1;::::0;1860:1;;1823:40:::1;1891:1;1874:19:::0;;-1:-1:-1;;;;;;1874:19:1::1;::::0;;1753:148::o;2056:244::-;1148:7;1175:6;-1:-1:-1;;;;;1175:6:1;681:10:2;1322:23:1;1314:68;;;;-1:-1:-1;;;1314:68:1;;1142:2:3;1314:68:1;;;1124:21:3;;;1161:18;;;1154:30;1220:34;1200:18;;;1193:62;1272:18;;1314:68:1;1114:182:3;1314:68:1;-1:-1:-1;;;;;2145:22:1;::::1;2137:73;;;::::0;-1:-1:-1;;;2137:73:1;;735:2:3;2137:73:1::1;::::0;::::1;717:21:3::0;774:2;754:18;;;747:30;813:34;793:18;;;786:62;-1:-1:-1;;;864:18:3;;;857:36;910:19;;2137:73:1::1;707:228:3::0;2137:73:1::1;2247:6;::::0;;2226:38:::1;::::0;-1:-1:-1;;;;;2226:38:1;;::::1;::::0;2247:6;::::1;::::0;2226:38:::1;::::0;::::1;2275:6;:17:::0;;-1:-1:-1;;;;;;2275:17:1::1;-1:-1:-1::0;;;;;2275:17:1;;;::::1;::::0;;;::::1;::::0;;2056:244::o;14:306:3:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:3;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:3:o",
-    "sourcePath": "d:/SakuraPayments/SakuraPayment/SakuraPlan.sol",
+    "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol\":\"SakuraPlan\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol\":{\"keccak256\":\"0x3783b46d4a012c9491cb8d591d71430066088a6792e8bf980607103bb19787fa\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://3eda2a105ba4cfb5ec6d7cf467d6c3f56d9f3887df1b35d1b8a8b1b1c61386f3\",\"dweb:/ipfs/QmUQm2n7ELSq57QQdZgPVEbvtQrKNa7ZruC71hR6z4Qomk\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/node_modules/@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"c:/Users/donut/Documents/SolidityProject/Projects/node_modules/@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a3506102a9806100616000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063715018a6146100465780638da5cb5b14610050578063f2fde38b1461006f575b600080fd5b61004e610082565b005b600054604080516001600160a01b039092168252519081900360200190f35b61004e61007d366004610245565b61012b565b6000546001600160a01b031633146100e15760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146101855760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016100d8565b6001600160a01b0381166101ea5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016100d8565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b600060208284031215610256578081fd5b81356001600160a01b038116811461026c578182fd5b939250505056fea2646970667358221220419dacf268228cf03cc73cf7bc602b186aaa69e1e856114c705019d36a57a17564736f6c63430008040033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063715018a6146100465780638da5cb5b14610050578063f2fde38b1461006f575b600080fd5b61004e610082565b005b600054604080516001600160a01b039092168252519081900360200190f35b61004e61007d366004610245565b61012b565b6000546001600160a01b031633146100e15760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064015b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146101855760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657260448201526064016100d8565b6001600160a01b0381166101ea5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b60648201526084016100d8565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b600060208284031215610256578081fd5b81356001600160a01b038116811461026c578182fd5b939250505056fea2646970667358221220419dacf268228cf03cc73cf7bc602b186aaa69e1e856114c705019d36a57a17564736f6c63430008040033",
+    "sourceMap": "184:1659:0:-:0;;;;;;;;;;;;-1:-1:-1;867:17:1;909:18;;-1:-1:-1;;;;;;909:18:1;665:10:2;909:18:1;;;;;942:43;;665:10:2;;;;942:43:1;;867:17;;942:43;842:150;184:1659:0;;;;;;",
+    "deployedSourceMap": "184:1659:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1700:145:1;;;:::i;:::-;;1068:85;1114:7;1140:6;1068:85;;;-1:-1:-1;;;;;1140:6:1;;;471:51:3;;1068:85:1;;;;;459:2:3;1068:85:1;;;1994:240;;;;;;:::i;:::-;;:::i;1700:145::-;1114:7;1140:6;-1:-1:-1;;;;;1140:6:1;665:10:2;1280:23:1;1272:68;;;;-1:-1:-1;;;1272:68:1;;1142:2:3;1272:68:1;;;1124:21:3;;;1161:18;;;1154:30;1220:34;1200:18;;;1193:62;1272:18;;:68:1;;;;;;;;;1806:1:::1;1790:6:::0;;1769:40:::1;::::0;-1:-1:-1;;;;;1790:6:1;;::::1;::::0;1769:40:::1;::::0;1806:1;;1769:40:::1;1836:1;1819:19:::0;;-1:-1:-1;;;;;;1819:19:1::1;::::0;;1700:145::o;1994:240::-;1114:7;1140:6;-1:-1:-1;;;;;1140:6:1;665:10:2;1280:23:1;1272:68;;;;-1:-1:-1;;;1272:68:1;;1142:2:3;1272:68:1;;;1124:21:3;;;1161:18;;;1154:30;1220:34;1200:18;;;1193:62;1272:18;;:68:1;1114:182:3;1272:68:1;-1:-1:-1;;;;;2082:22:1;::::1;2074:73;;;::::0;-1:-1:-1;;;2074:73:1;;735:2:3;2074:73:1::1;::::0;::::1;717:21:3::0;774:2;754:18;;;747:30;813:34;793:18;;;786:62;-1:-1:-1;;;864:18:3;;;857:36;910:19;;2074:73:1::1;707:228:3::0;2074:73:1::1;2183:6;::::0;;2162:38:::1;::::0;-1:-1:-1;;;;;2162:38:1;;::::1;::::0;2183:6;::::1;::::0;2162:38:::1;::::0;::::1;2210:6;:17:::0;;-1:-1:-1;;;;;;2210:17:1::1;-1:-1:-1::0;;;;;2210:17:1;;;::::1;::::0;;;::::1;::::0;;1994:240::o;14:306:3:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;147:6;139;132:22;94:2;178:23;;-1:-1:-1;;;;;230:31:3;;220:42;;210:2;;281:6;273;266:22;210:2;309:5;84:236;-1:-1:-1;;;84:236:3:o",
+    "sourcePath": "c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol",
     "compiler": {
         "name": "solc",
         "version": "0.8.4+commit.c7e474f2"
     },
     "ast": {
-        "absolutePath": "d:/SakuraPayments/SakuraPayment/SakuraPlan.sol",
+        "absolutePath": "c:/Users/donut/Documents/SolidityProject/Projects/SakuraPlan.sol",
         "exportedSymbols": {
             "Context": [
                 246
@@ -93,7 +93,7 @@
                 "src": "39:23:0"
             },
             {
-                "absolutePath": "d:/SakuraPayments/SakuraPayment/node_modules/@openzeppelin/contracts/access/Ownable.sol",
+                "absolutePath": "c:/Users/donut/Documents/SolidityProject/Projects/node_modules/@openzeppelin/contracts/access/Ownable.sol",
                 "file": "./node_modules/@openzeppelin/contracts/access/Ownable.sol",
                 "id": 2,
                 "nameLocation": "-1:-1:-1",
@@ -169,24 +169,24 @@
                                 "id": 8,
                                 "mutability": "mutable",
                                 "name": "workerHours",
-                                "nameLocation": "424:11:0",
+                                "nameLocation": "425:11:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "418:17:0",
+                                "src": "418:18:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_uint8",
-                                    "typeString": "uint8"
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
                                 },
                                 "typeName": {
                                     "id": 7,
-                                    "name": "uint8",
+                                    "name": "uint32",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "418:5:0",
+                                    "src": "418:6:0",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_uint8",
-                                        "typeString": "uint8"
+                                        "typeIdentifier": "t_uint32",
+                                        "typeString": "uint32"
                                     }
                                 },
                                 "visibility": "internal"
@@ -196,24 +196,24 @@
                                 "id": 10,
                                 "mutability": "mutable",
                                 "name": "payRate",
-                                "nameLocation": "448:7:0",
+                                "nameLocation": "450:7:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "442:13:0",
+                                "src": "443:14:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
-                                    "typeIdentifier": "t_uint8",
-                                    "typeString": "uint8"
+                                    "typeIdentifier": "t_uint32",
+                                    "typeString": "uint32"
                                 },
                                 "typeName": {
                                     "id": 9,
-                                    "name": "uint8",
+                                    "name": "uint32",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "442:5:0",
+                                    "src": "443:6:0",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_uint8",
-                                        "typeString": "uint8"
+                                        "typeIdentifier": "t_uint32",
+                                        "typeString": "uint32"
                                     }
                                 },
                                 "visibility": "internal"
@@ -223,10 +223,10 @@
                                 "id": 12,
                                 "mutability": "mutable",
                                 "name": "commissionValue",
-                                "nameLocation": "469:15:0",
+                                "nameLocation": "471:15:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "462:22:0",
+                                "src": "464:22:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -237,7 +237,7 @@
                                     "id": 11,
                                     "name": "uint32",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "462:6:0",
+                                    "src": "464:6:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint32",
                                         "typeString": "uint32"
@@ -250,10 +250,10 @@
                                 "id": 14,
                                 "mutability": "mutable",
                                 "name": "salary",
-                                "nameLocation": "499:6:0",
+                                "nameLocation": "501:6:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "491:14:0",
+                                "src": "493:14:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -264,7 +264,7 @@
                                     "id": 13,
                                     "name": "uint128",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "491:7:0",
+                                    "src": "493:7:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint128",
                                         "typeString": "uint128"
@@ -277,10 +277,10 @@
                                 "id": 16,
                                 "mutability": "mutable",
                                 "name": "commissionRate",
-                                "nameLocation": "520:14:0",
+                                "nameLocation": "522:14:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "512:22:0",
+                                "src": "514:22:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -291,7 +291,7 @@
                                     "id": 15,
                                     "name": "uint256",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "512:7:0",
+                                    "src": "514:7:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -304,10 +304,10 @@
                                 "id": 18,
                                 "mutability": "mutable",
                                 "name": "billingPeriod",
-                                "nameLocation": "549:13:0",
+                                "nameLocation": "551:13:0",
                                 "nodeType": "VariableDeclaration",
                                 "scope": 19,
-                                "src": "541:21:0",
+                                "src": "543:21:0",
                                 "stateVariable": false,
                                 "storageLocation": "default",
                                 "typeDescriptions": {
@@ -318,7 +318,7 @@
                                     "id": 17,
                                     "name": "uint256",
                                     "nodeType": "ElementaryTypeName",
-                                    "src": "541:7:0",
+                                    "src": "543:7:0",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -331,14 +331,14 @@
                         "nameLocation": "299:4:0",
                         "nodeType": "StructDefinition",
                         "scope": 113,
-                        "src": "292:274:0",
+                        "src": "292:276:0",
                         "visibility": "public"
                     },
                     {
                         "body": {
                             "id": 111,
                             "nodeType": "Block",
-                            "src": "787:692:0",
+                            "src": "790:692:0",
                             "statements": [
                                 {
                                     "assignments": [
@@ -350,24 +350,24 @@
                                             "id": 28,
                                             "mutability": "mutable",
                                             "name": "paymentAmount",
-                                            "nameLocation": "804:13:0",
+                                            "nameLocation": "807:13:0",
                                             "nodeType": "VariableDeclaration",
                                             "scope": 111,
-                                            "src": "796:21:0",
+                                            "src": "799:21:0",
                                             "stateVariable": false,
                                             "storageLocation": "default",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_uint128",
-                                                "typeString": "uint128"
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
                                             },
                                             "typeName": {
                                                 "id": 27,
-                                                "name": "uint128",
+                                                "name": "uint256",
                                                 "nodeType": "ElementaryTypeName",
-                                                "src": "796:7:0",
+                                                "src": "799:7:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_uint128",
-                                                    "typeString": "uint128"
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
                                                 }
                                             },
                                             "visibility": "internal"
@@ -375,7 +375,7 @@
                                     ],
                                     "id": 29,
                                     "nodeType": "VariableDeclarationStatement",
-                                    "src": "796:21:0"
+                                    "src": "799:21:0"
                                 },
                                 {
                                     "condition": {
@@ -395,10 +395,10 @@
                                                 "nodeType": "Identifier",
                                                 "overloadedDeclarations": [],
                                                 "referencedDeclaration": 22,
-                                                "src": "830:13:0",
+                                                "src": "833:13:0",
                                                 "typeDescriptions": {
-                                                    "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                    "typeString": "struct SakuraPlan.Plan memory"
+                                                    "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                    "typeString": "struct SakuraPlan.Plan storage pointer"
                                                 }
                                             },
                                             "id": 31,
@@ -409,7 +409,7 @@
                                             "memberName": "wageType",
                                             "nodeType": "MemberAccess",
                                             "referencedDeclaration": 6,
-                                            "src": "830:22:0",
+                                            "src": "833:22:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_uint8",
                                                 "typeString": "uint8"
@@ -426,14 +426,14 @@
                                             "kind": "number",
                                             "lValueRequested": false,
                                             "nodeType": "Literal",
-                                            "src": "856:1:0",
+                                            "src": "859:1:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_rational_0_by_1",
                                                 "typeString": "int_const 0"
                                             },
                                             "value": "0"
                                         },
-                                        "src": "830:27:0",
+                                        "src": "833:27:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_bool",
                                             "typeString": "bool"
@@ -457,10 +457,10 @@
                                                     "nodeType": "Identifier",
                                                     "overloadedDeclarations": [],
                                                     "referencedDeclaration": 22,
-                                                    "src": "974:13:0",
+                                                    "src": "977:13:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                        "typeString": "struct SakuraPlan.Plan memory"
+                                                        "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                        "typeString": "struct SakuraPlan.Plan storage pointer"
                                                     }
                                                 },
                                                 "id": 47,
@@ -471,7 +471,7 @@
                                                 "memberName": "wageType",
                                                 "nodeType": "MemberAccess",
                                                 "referencedDeclaration": 6,
-                                                "src": "974:22:0",
+                                                "src": "977:22:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_uint8",
                                                     "typeString": "uint8"
@@ -488,14 +488,14 @@
                                                 "kind": "number",
                                                 "lValueRequested": false,
                                                 "nodeType": "Literal",
-                                                "src": "1000:1:0",
+                                                "src": "1003:1:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_rational_1_by_1",
                                                     "typeString": "int_const 1"
                                                 },
                                                 "value": "1"
                                             },
-                                            "src": "974:27:0",
+                                            "src": "977:27:0",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_bool",
                                                 "typeString": "bool"
@@ -519,10 +519,10 @@
                                                         "nodeType": "Identifier",
                                                         "overloadedDeclarations": [],
                                                         "referencedDeclaration": 22,
-                                                        "src": "1128:13:0",
+                                                        "src": "1131:13:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                            "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                            "typeString": "struct SakuraPlan.Plan storage pointer"
                                                         }
                                                     },
                                                     "id": 66,
@@ -533,7 +533,7 @@
                                                     "memberName": "wageType",
                                                     "nodeType": "MemberAccess",
                                                     "referencedDeclaration": 6,
-                                                    "src": "1128:22:0",
+                                                    "src": "1131:22:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_uint8",
                                                         "typeString": "uint8"
@@ -550,14 +550,14 @@
                                                     "kind": "number",
                                                     "lValueRequested": false,
                                                     "nodeType": "Literal",
-                                                    "src": "1154:1:0",
+                                                    "src": "1157:1:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_rational_2_by_1",
                                                         "typeString": "int_const 2"
                                                     },
                                                     "value": "2"
                                                 },
-                                                "src": "1128:27:0",
+                                                "src": "1131:27:0",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_bool",
                                                     "typeString": "bool"
@@ -581,10 +581,10 @@
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
                                                             "referencedDeclaration": 22,
-                                                            "src": "1349:13:0",
+                                                            "src": "1352:13:0",
                                                             "typeDescriptions": {
-                                                                "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                                "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                "typeString": "struct SakuraPlan.Plan storage pointer"
                                                             }
                                                         },
                                                         "id": 93,
@@ -595,7 +595,7 @@
                                                         "memberName": "wageType",
                                                         "nodeType": "MemberAccess",
                                                         "referencedDeclaration": 6,
-                                                        "src": "1349:22:0",
+                                                        "src": "1352:22:0",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_uint8",
                                                             "typeString": "uint8"
@@ -612,14 +612,14 @@
                                                         "kind": "number",
                                                         "lValueRequested": false,
                                                         "nodeType": "Literal",
-                                                        "src": "1375:1:0",
+                                                        "src": "1378:1:0",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_rational_3_by_1",
                                                             "typeString": "int_const 3"
                                                         },
                                                         "value": "3"
                                                     },
-                                                    "src": "1349:27:0",
+                                                    "src": "1352:27:0",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_bool",
                                                         "typeString": "bool"
@@ -627,11 +627,11 @@
                                                 },
                                                 "id": 105,
                                                 "nodeType": "IfStatement",
-                                                "src": "1345:102:0",
+                                                "src": "1348:102:0",
                                                 "trueBody": {
                                                     "id": 104,
                                                     "nodeType": "Block",
-                                                    "src": "1383:64:0",
+                                                    "src": "1386:64:0",
                                                     "statements": [
                                                         {
                                                             "expression": {
@@ -646,10 +646,10 @@
                                                                     "nodeType": "Identifier",
                                                                     "overloadedDeclarations": [],
                                                                     "referencedDeclaration": 28,
-                                                                    "src": "1394:13:0",
+                                                                    "src": "1397:13:0",
                                                                     "typeDescriptions": {
-                                                                        "typeIdentifier": "t_uint128",
-                                                                        "typeString": "uint128"
+                                                                        "typeIdentifier": "t_uint256",
+                                                                        "typeString": "uint256"
                                                                     }
                                                                 },
                                                                 "nodeType": "Assignment",
@@ -663,10 +663,10 @@
                                                                                 "nodeType": "Identifier",
                                                                                 "overloadedDeclarations": [],
                                                                                 "referencedDeclaration": 22,
-                                                                                "src": "1418:13:0",
+                                                                                "src": "1421:13:0",
                                                                                 "typeDescriptions": {
-                                                                                    "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                    "typeString": "struct SakuraPlan.Plan memory"
+                                                                                    "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                    "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                 }
                                                                             },
                                                                             "id": 100,
@@ -677,7 +677,7 @@
                                                                             "memberName": "salary",
                                                                             "nodeType": "MemberAccess",
                                                                             "referencedDeclaration": 14,
-                                                                            "src": "1418:20:0",
+                                                                            "src": "1421:20:0",
                                                                             "typeDescriptions": {
                                                                                 "typeIdentifier": "t_uint128",
                                                                                 "typeString": "uint128"
@@ -697,16 +697,16 @@
                                                                         "isPure": true,
                                                                         "lValueRequested": false,
                                                                         "nodeType": "ElementaryTypeNameExpression",
-                                                                        "src": "1410:7:0",
+                                                                        "src": "1413:7:0",
                                                                         "typeDescriptions": {
-                                                                            "typeIdentifier": "t_type$_t_uint128_$",
-                                                                            "typeString": "type(uint128)"
+                                                                            "typeIdentifier": "t_type$_t_uint256_$",
+                                                                            "typeString": "type(uint256)"
                                                                         },
                                                                         "typeName": {
                                                                             "id": 97,
-                                                                            "name": "uint128",
+                                                                            "name": "uint256",
                                                                             "nodeType": "ElementaryTypeName",
-                                                                            "src": "1410:7:0",
+                                                                            "src": "1413:7:0",
                                                                             "typeDescriptions": {}
                                                                         }
                                                                     },
@@ -718,33 +718,33 @@
                                                                     "lValueRequested": false,
                                                                     "names": [],
                                                                     "nodeType": "FunctionCall",
-                                                                    "src": "1410:29:0",
+                                                                    "src": "1413:29:0",
                                                                     "tryCall": false,
                                                                     "typeDescriptions": {
-                                                                        "typeIdentifier": "t_uint128",
-                                                                        "typeString": "uint128"
+                                                                        "typeIdentifier": "t_uint256",
+                                                                        "typeString": "uint256"
                                                                     }
                                                                 },
-                                                                "src": "1394:45:0",
+                                                                "src": "1397:45:0",
                                                                 "typeDescriptions": {
-                                                                    "typeIdentifier": "t_uint128",
-                                                                    "typeString": "uint128"
+                                                                    "typeIdentifier": "t_uint256",
+                                                                    "typeString": "uint256"
                                                                 }
                                                             },
                                                             "id": 103,
                                                             "nodeType": "ExpressionStatement",
-                                                            "src": "1394:45:0"
+                                                            "src": "1397:45:0"
                                                         }
                                                     ]
                                                 }
                                             },
                                             "id": 106,
                                             "nodeType": "IfStatement",
-                                            "src": "1124:323:0",
+                                            "src": "1127:323:0",
                                             "trueBody": {
                                                 "id": 91,
                                                 "nodeType": "Block",
-                                                "src": "1162:170:0",
+                                                "src": "1165:170:0",
                                                 "statements": [
                                                     {
                                                         "expression": {
@@ -759,10 +759,10 @@
                                                                 "nodeType": "Identifier",
                                                                 "overloadedDeclarations": [],
                                                                 "referencedDeclaration": 28,
-                                                                "src": "1173:13:0",
+                                                                "src": "1176:13:0",
                                                                 "typeDescriptions": {
-                                                                    "typeIdentifier": "t_uint128",
-                                                                    "typeString": "uint128"
+                                                                    "typeIdentifier": "t_uint256",
+                                                                    "typeString": "uint256"
                                                                 }
                                                             },
                                                             "nodeType": "Assignment",
@@ -810,10 +810,10 @@
                                                                                                         "nodeType": "Identifier",
                                                                                                         "overloadedDeclarations": [],
                                                                                                         "referencedDeclaration": 22,
-                                                                                                        "src": "1199:13:0",
+                                                                                                        "src": "1202:13:0",
                                                                                                         "typeDescriptions": {
-                                                                                                            "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                                                            "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                                            "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                                         }
                                                                                                     },
                                                                                                     "id": 73,
@@ -824,7 +824,7 @@
                                                                                                     "memberName": "billingPeriod",
                                                                                                     "nodeType": "MemberAccess",
                                                                                                     "referencedDeclaration": 18,
-                                                                                                    "src": "1199:27:0",
+                                                                                                    "src": "1202:27:0",
                                                                                                     "typeDescriptions": {
                                                                                                         "typeIdentifier": "t_uint256",
                                                                                                         "typeString": "uint256"
@@ -841,14 +841,14 @@
                                                                                                     "kind": "number",
                                                                                                     "lValueRequested": false,
                                                                                                     "nodeType": "Literal",
-                                                                                                    "src": "1227:8:0",
+                                                                                                    "src": "1230:8:0",
                                                                                                     "typeDescriptions": {
                                                                                                         "typeIdentifier": "t_rational_31536000_by_1",
                                                                                                         "typeString": "int_const 31536000"
                                                                                                     },
                                                                                                     "value": "31536000"
                                                                                                 },
-                                                                                                "src": "1199:36:0",
+                                                                                                "src": "1202:36:0",
                                                                                                 "typeDescriptions": {
                                                                                                     "typeIdentifier": "t_uint256",
                                                                                                     "typeString": "uint256"
@@ -862,7 +862,7 @@
                                                                                         "isPure": false,
                                                                                         "lValueRequested": false,
                                                                                         "nodeType": "TupleExpression",
-                                                                                        "src": "1198:38:0",
+                                                                                        "src": "1201:38:0",
                                                                                         "typeDescriptions": {
                                                                                             "typeIdentifier": "t_uint256",
                                                                                             "typeString": "uint256"
@@ -877,10 +877,10 @@
                                                                                             "nodeType": "Identifier",
                                                                                             "overloadedDeclarations": [],
                                                                                             "referencedDeclaration": 22,
-                                                                                            "src": "1237:13:0",
+                                                                                            "src": "1240:13:0",
                                                                                             "typeDescriptions": {
-                                                                                                "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                                                                "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                                "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                             }
                                                                                         },
                                                                                         "id": 78,
@@ -891,13 +891,13 @@
                                                                                         "memberName": "salary",
                                                                                         "nodeType": "MemberAccess",
                                                                                         "referencedDeclaration": 14,
-                                                                                        "src": "1237:20:0",
+                                                                                        "src": "1240:20:0",
                                                                                         "typeDescriptions": {
                                                                                             "typeIdentifier": "t_uint128",
                                                                                             "typeString": "uint128"
                                                                                         }
                                                                                     },
-                                                                                    "src": "1198:59:0",
+                                                                                    "src": "1201:59:0",
                                                                                     "typeDescriptions": {
                                                                                         "typeIdentifier": "t_uint256",
                                                                                         "typeString": "uint256"
@@ -911,7 +911,7 @@
                                                                             "isPure": false,
                                                                             "lValueRequested": false,
                                                                             "nodeType": "TupleExpression",
-                                                                            "src": "1197:61:0",
+                                                                            "src": "1200:61:0",
                                                                             "typeDescriptions": {
                                                                                 "typeIdentifier": "t_uint256",
                                                                                 "typeString": "uint256"
@@ -938,10 +938,10 @@
                                                                                             "nodeType": "Identifier",
                                                                                             "overloadedDeclarations": [],
                                                                                             "referencedDeclaration": 22,
-                                                                                            "src": "1262:13:0",
+                                                                                            "src": "1265:13:0",
                                                                                             "typeDescriptions": {
-                                                                                                "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                                                                "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                                "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                             }
                                                                                         },
                                                                                         "id": 82,
@@ -952,7 +952,7 @@
                                                                                         "memberName": "commissionValue",
                                                                                         "nodeType": "MemberAccess",
                                                                                         "referencedDeclaration": 12,
-                                                                                        "src": "1262:29:0",
+                                                                                        "src": "1265:29:0",
                                                                                         "typeDescriptions": {
                                                                                             "typeIdentifier": "t_uint32",
                                                                                             "typeString": "uint32"
@@ -967,10 +967,10 @@
                                                                                             "nodeType": "Identifier",
                                                                                             "overloadedDeclarations": [],
                                                                                             "referencedDeclaration": 22,
-                                                                                            "src": "1294:13:0",
+                                                                                            "src": "1297:13:0",
                                                                                             "typeDescriptions": {
-                                                                                                "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                                                                "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                                "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                             }
                                                                                         },
                                                                                         "id": 84,
@@ -981,13 +981,13 @@
                                                                                         "memberName": "commissionRate",
                                                                                         "nodeType": "MemberAccess",
                                                                                         "referencedDeclaration": 16,
-                                                                                        "src": "1294:28:0",
+                                                                                        "src": "1297:28:0",
                                                                                         "typeDescriptions": {
                                                                                             "typeIdentifier": "t_uint256",
                                                                                             "typeString": "uint256"
                                                                                         }
                                                                                     },
-                                                                                    "src": "1262:60:0",
+                                                                                    "src": "1265:60:0",
                                                                                     "typeDescriptions": {
                                                                                         "typeIdentifier": "t_uint256",
                                                                                         "typeString": "uint256"
@@ -1001,13 +1001,13 @@
                                                                             "isPure": false,
                                                                             "lValueRequested": false,
                                                                             "nodeType": "TupleExpression",
-                                                                            "src": "1261:62:0",
+                                                                            "src": "1264:62:0",
                                                                             "typeDescriptions": {
                                                                                 "typeIdentifier": "t_uint256",
                                                                                 "typeString": "uint256"
                                                                             }
                                                                         },
-                                                                        "src": "1197:126:0",
+                                                                        "src": "1200:126:0",
                                                                         "typeDescriptions": {
                                                                             "typeIdentifier": "t_uint256",
                                                                             "typeString": "uint256"
@@ -1027,16 +1027,16 @@
                                                                     "isPure": true,
                                                                     "lValueRequested": false,
                                                                     "nodeType": "ElementaryTypeNameExpression",
-                                                                    "src": "1189:7:0",
+                                                                    "src": "1192:7:0",
                                                                     "typeDescriptions": {
-                                                                        "typeIdentifier": "t_type$_t_uint128_$",
-                                                                        "typeString": "type(uint128)"
+                                                                        "typeIdentifier": "t_type$_t_uint256_$",
+                                                                        "typeString": "type(uint256)"
                                                                     },
                                                                     "typeName": {
                                                                         "id": 70,
-                                                                        "name": "uint128",
+                                                                        "name": "uint256",
                                                                         "nodeType": "ElementaryTypeName",
-                                                                        "src": "1189:7:0",
+                                                                        "src": "1192:7:0",
                                                                         "typeDescriptions": {}
                                                                     }
                                                                 },
@@ -1048,33 +1048,33 @@
                                                                 "lValueRequested": false,
                                                                 "names": [],
                                                                 "nodeType": "FunctionCall",
-                                                                "src": "1189:135:0",
+                                                                "src": "1192:135:0",
                                                                 "tryCall": false,
                                                                 "typeDescriptions": {
-                                                                    "typeIdentifier": "t_uint128",
-                                                                    "typeString": "uint128"
+                                                                    "typeIdentifier": "t_uint256",
+                                                                    "typeString": "uint256"
                                                                 }
                                                             },
-                                                            "src": "1173:151:0",
+                                                            "src": "1176:151:0",
                                                             "typeDescriptions": {
-                                                                "typeIdentifier": "t_uint128",
-                                                                "typeString": "uint128"
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
                                                             }
                                                         },
                                                         "id": 90,
                                                         "nodeType": "ExpressionStatement",
-                                                        "src": "1173:151:0"
+                                                        "src": "1176:151:0"
                                                     }
                                                 ]
                                             }
                                         },
                                         "id": 107,
                                         "nodeType": "IfStatement",
-                                        "src": "970:477:0",
+                                        "src": "973:477:0",
                                         "trueBody": {
                                             "id": 64,
                                             "nodeType": "Block",
-                                            "src": "1008:103:0",
+                                            "src": "1011:103:0",
                                             "statements": [
                                                 {
                                                     "expression": {
@@ -1089,10 +1089,10 @@
                                                             "nodeType": "Identifier",
                                                             "overloadedDeclarations": [],
                                                             "referencedDeclaration": 28,
-                                                            "src": "1019:13:0",
+                                                            "src": "1022:13:0",
                                                             "typeDescriptions": {
-                                                                "typeIdentifier": "t_uint128",
-                                                                "typeString": "uint128"
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
                                                             }
                                                         },
                                                         "nodeType": "Assignment",
@@ -1128,10 +1128,10 @@
                                                                                         "nodeType": "Identifier",
                                                                                         "overloadedDeclarations": [],
                                                                                         "referencedDeclaration": 22,
-                                                                                        "src": "1044:13:0",
+                                                                                        "src": "1047:13:0",
                                                                                         "typeDescriptions": {
-                                                                                            "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                                            "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                            "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                                         }
                                                                                     },
                                                                                     "id": 54,
@@ -1142,7 +1142,7 @@
                                                                                     "memberName": "billingPeriod",
                                                                                     "nodeType": "MemberAccess",
                                                                                     "referencedDeclaration": 18,
-                                                                                    "src": "1044:27:0",
+                                                                                    "src": "1047:27:0",
                                                                                     "typeDescriptions": {
                                                                                         "typeIdentifier": "t_uint256",
                                                                                         "typeString": "uint256"
@@ -1159,14 +1159,14 @@
                                                                                     "kind": "number",
                                                                                     "lValueRequested": false,
                                                                                     "nodeType": "Literal",
-                                                                                    "src": "1072:8:0",
+                                                                                    "src": "1075:8:0",
                                                                                     "typeDescriptions": {
                                                                                         "typeIdentifier": "t_rational_31536000_by_1",
                                                                                         "typeString": "int_const 31536000"
                                                                                     },
                                                                                     "value": "31536000"
                                                                                 },
-                                                                                "src": "1044:36:0",
+                                                                                "src": "1047:36:0",
                                                                                 "typeDescriptions": {
                                                                                     "typeIdentifier": "t_uint256",
                                                                                     "typeString": "uint256"
@@ -1180,7 +1180,7 @@
                                                                         "isPure": false,
                                                                         "lValueRequested": false,
                                                                         "nodeType": "TupleExpression",
-                                                                        "src": "1043:38:0",
+                                                                        "src": "1046:38:0",
                                                                         "typeDescriptions": {
                                                                             "typeIdentifier": "t_uint256",
                                                                             "typeString": "uint256"
@@ -1195,10 +1195,10 @@
                                                                             "nodeType": "Identifier",
                                                                             "overloadedDeclarations": [],
                                                                             "referencedDeclaration": 22,
-                                                                            "src": "1082:13:0",
+                                                                            "src": "1085:13:0",
                                                                             "typeDescriptions": {
-                                                                                "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                                "typeString": "struct SakuraPlan.Plan memory"
+                                                                                "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                                "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                             }
                                                                         },
                                                                         "id": 59,
@@ -1209,13 +1209,13 @@
                                                                         "memberName": "salary",
                                                                         "nodeType": "MemberAccess",
                                                                         "referencedDeclaration": 14,
-                                                                        "src": "1082:20:0",
+                                                                        "src": "1085:20:0",
                                                                         "typeDescriptions": {
                                                                             "typeIdentifier": "t_uint128",
                                                                             "typeString": "uint128"
                                                                         }
                                                                     },
-                                                                    "src": "1043:59:0",
+                                                                    "src": "1046:59:0",
                                                                     "typeDescriptions": {
                                                                         "typeIdentifier": "t_uint256",
                                                                         "typeString": "uint256"
@@ -1235,16 +1235,16 @@
                                                                 "isPure": true,
                                                                 "lValueRequested": false,
                                                                 "nodeType": "ElementaryTypeNameExpression",
-                                                                "src": "1035:7:0",
+                                                                "src": "1038:7:0",
                                                                 "typeDescriptions": {
-                                                                    "typeIdentifier": "t_type$_t_uint128_$",
-                                                                    "typeString": "type(uint128)"
+                                                                    "typeIdentifier": "t_type$_t_uint256_$",
+                                                                    "typeString": "type(uint256)"
                                                                 },
                                                                 "typeName": {
                                                                     "id": 51,
-                                                                    "name": "uint128",
+                                                                    "name": "uint256",
                                                                     "nodeType": "ElementaryTypeName",
-                                                                    "src": "1035:7:0",
+                                                                    "src": "1038:7:0",
                                                                     "typeDescriptions": {}
                                                                 }
                                                             },
@@ -1256,33 +1256,33 @@
                                                             "lValueRequested": false,
                                                             "names": [],
                                                             "nodeType": "FunctionCall",
-                                                            "src": "1035:68:0",
+                                                            "src": "1038:68:0",
                                                             "tryCall": false,
                                                             "typeDescriptions": {
-                                                                "typeIdentifier": "t_uint128",
-                                                                "typeString": "uint128"
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
                                                             }
                                                         },
-                                                        "src": "1019:84:0",
+                                                        "src": "1022:84:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_uint128",
-                                                            "typeString": "uint128"
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
                                                         }
                                                     },
                                                     "id": 63,
                                                     "nodeType": "ExpressionStatement",
-                                                    "src": "1019:84:0"
+                                                    "src": "1022:84:0"
                                                 }
                                             ]
                                         }
                                     },
                                     "id": 108,
                                     "nodeType": "IfStatement",
-                                    "src": "826:621:0",
+                                    "src": "829:621:0",
                                     "trueBody": {
                                         "id": 45,
                                         "nodeType": "Block",
-                                        "src": "864:93:0",
+                                        "src": "867:93:0",
                                         "statements": [
                                             {
                                                 "expression": {
@@ -1297,10 +1297,10 @@
                                                         "nodeType": "Identifier",
                                                         "overloadedDeclarations": [],
                                                         "referencedDeclaration": 28,
-                                                        "src": "875:13:0",
+                                                        "src": "878:13:0",
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_uint128",
-                                                            "typeString": "uint128"
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
                                                         }
                                                     },
                                                     "nodeType": "Assignment",
@@ -1309,8 +1309,8 @@
                                                         "arguments": [
                                                             {
                                                                 "commonType": {
-                                                                    "typeIdentifier": "t_uint8",
-                                                                    "typeString": "uint8"
+                                                                    "typeIdentifier": "t_uint32",
+                                                                    "typeString": "uint32"
                                                                 },
                                                                 "id": 41,
                                                                 "isConstant": false,
@@ -1324,10 +1324,10 @@
                                                                         "nodeType": "Identifier",
                                                                         "overloadedDeclarations": [],
                                                                         "referencedDeclaration": 22,
-                                                                        "src": "899:13:0",
+                                                                        "src": "902:13:0",
                                                                         "typeDescriptions": {
-                                                                            "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                            "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                            "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                         }
                                                                     },
                                                                     "id": 38,
@@ -1338,10 +1338,10 @@
                                                                     "memberName": "workerHours",
                                                                     "nodeType": "MemberAccess",
                                                                     "referencedDeclaration": 8,
-                                                                    "src": "899:25:0",
+                                                                    "src": "902:25:0",
                                                                     "typeDescriptions": {
-                                                                        "typeIdentifier": "t_uint8",
-                                                                        "typeString": "uint8"
+                                                                        "typeIdentifier": "t_uint32",
+                                                                        "typeString": "uint32"
                                                                     }
                                                                 },
                                                                 "nodeType": "BinaryOperation",
@@ -1353,10 +1353,10 @@
                                                                         "nodeType": "Identifier",
                                                                         "overloadedDeclarations": [],
                                                                         "referencedDeclaration": 22,
-                                                                        "src": "927:13:0",
+                                                                        "src": "930:13:0",
                                                                         "typeDescriptions": {
-                                                                            "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
-                                                                            "typeString": "struct SakuraPlan.Plan memory"
+                                                                            "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
+                                                                            "typeString": "struct SakuraPlan.Plan storage pointer"
                                                                         }
                                                                     },
                                                                     "id": 40,
@@ -1367,24 +1367,24 @@
                                                                     "memberName": "payRate",
                                                                     "nodeType": "MemberAccess",
                                                                     "referencedDeclaration": 10,
-                                                                    "src": "927:21:0",
+                                                                    "src": "930:21:0",
                                                                     "typeDescriptions": {
-                                                                        "typeIdentifier": "t_uint8",
-                                                                        "typeString": "uint8"
+                                                                        "typeIdentifier": "t_uint32",
+                                                                        "typeString": "uint32"
                                                                     }
                                                                 },
-                                                                "src": "899:49:0",
+                                                                "src": "902:49:0",
                                                                 "typeDescriptions": {
-                                                                    "typeIdentifier": "t_uint8",
-                                                                    "typeString": "uint8"
+                                                                    "typeIdentifier": "t_uint32",
+                                                                    "typeString": "uint32"
                                                                 }
                                                             }
                                                         ],
                                                         "expression": {
                                                             "argumentTypes": [
                                                                 {
-                                                                    "typeIdentifier": "t_uint8",
-                                                                    "typeString": "uint8"
+                                                                    "typeIdentifier": "t_uint32",
+                                                                    "typeString": "uint32"
                                                                 }
                                                             ],
                                                             "id": 36,
@@ -1393,16 +1393,16 @@
                                                             "isPure": true,
                                                             "lValueRequested": false,
                                                             "nodeType": "ElementaryTypeNameExpression",
-                                                            "src": "891:7:0",
+                                                            "src": "894:7:0",
                                                             "typeDescriptions": {
-                                                                "typeIdentifier": "t_type$_t_uint128_$",
-                                                                "typeString": "type(uint128)"
+                                                                "typeIdentifier": "t_type$_t_uint256_$",
+                                                                "typeString": "type(uint256)"
                                                             },
                                                             "typeName": {
                                                                 "id": 35,
-                                                                "name": "uint128",
+                                                                "name": "uint256",
                                                                 "nodeType": "ElementaryTypeName",
-                                                                "src": "891:7:0",
+                                                                "src": "894:7:0",
                                                                 "typeDescriptions": {}
                                                             }
                                                         },
@@ -1414,22 +1414,22 @@
                                                         "lValueRequested": false,
                                                         "names": [],
                                                         "nodeType": "FunctionCall",
-                                                        "src": "891:58:0",
+                                                        "src": "894:58:0",
                                                         "tryCall": false,
                                                         "typeDescriptions": {
-                                                            "typeIdentifier": "t_uint128",
-                                                            "typeString": "uint128"
+                                                            "typeIdentifier": "t_uint256",
+                                                            "typeString": "uint256"
                                                         }
                                                     },
-                                                    "src": "875:74:0",
+                                                    "src": "878:74:0",
                                                     "typeDescriptions": {
-                                                        "typeIdentifier": "t_uint128",
-                                                        "typeString": "uint128"
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
                                                     }
                                                 },
                                                 "id": 44,
                                                 "nodeType": "ExpressionStatement",
-                                                "src": "875:74:0"
+                                                "src": "878:74:0"
                                             }
                                         ]
                                     }
@@ -1441,16 +1441,16 @@
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
                                         "referencedDeclaration": 28,
-                                        "src": "1460:13:0",
+                                        "src": "1463:13:0",
                                         "typeDescriptions": {
-                                            "typeIdentifier": "t_uint128",
-                                            "typeString": "uint128"
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
                                         }
                                     },
                                     "functionReturnParameters": 26,
                                     "id": 110,
                                     "nodeType": "Return",
-                                    "src": "1453:20:0"
+                                    "src": "1456:20:0"
                                 }
                             ]
                         },
@@ -1459,7 +1459,7 @@
                         "kind": "function",
                         "modifiers": [],
                         "name": "_calculateTotalPayment",
-                        "nameLocation": "705:22:0",
+                        "nameLocation": "707:22:0",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
                             "id": 23,
@@ -1470,14 +1470,14 @@
                                     "id": 22,
                                     "mutability": "mutable",
                                     "name": "_employeePlan",
-                                    "nameLocation": "740:13:0",
+                                    "nameLocation": "743:13:0",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 112,
-                                    "src": "728:25:0",
+                                    "src": "730:26:0",
                                     "stateVariable": false,
-                                    "storageLocation": "memory",
+                                    "storageLocation": "storage",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_Plan_$19_memory_ptr",
+                                        "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
                                         "typeString": "struct SakuraPlan.Plan"
                                     },
                                     "typeName": {
@@ -1488,10 +1488,10 @@
                                             "name": "Plan",
                                             "nodeType": "IdentifierPath",
                                             "referencedDeclaration": 19,
-                                            "src": "728:4:0"
+                                            "src": "730:4:0"
                                         },
                                         "referencedDeclaration": 19,
-                                        "src": "728:4:0",
+                                        "src": "730:4:0",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_struct$_Plan_$19_storage_ptr",
                                             "typeString": "struct SakuraPlan.Plan"
@@ -1500,7 +1500,7 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "727:27:0"
+                            "src": "729:28:0"
                         },
                         "returnParameters": {
                             "id": 26,
@@ -1514,41 +1514,41 @@
                                     "nameLocation": "-1:-1:-1",
                                     "nodeType": "VariableDeclaration",
                                     "scope": 112,
-                                    "src": "777:7:0",
+                                    "src": "780:7:0",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_uint128",
-                                        "typeString": "uint128"
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
                                     },
                                     "typeName": {
                                         "id": 24,
-                                        "name": "uint128",
+                                        "name": "uint256",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "777:7:0",
+                                        "src": "780:7:0",
                                         "typeDescriptions": {
-                                            "typeIdentifier": "t_uint128",
-                                            "typeString": "uint128"
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
                                         }
                                     },
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "776:9:0"
+                            "src": "779:9:0"
                         },
                         "scope": 113,
-                        "src": "696:783:0",
-                        "stateMutability": "pure",
+                        "src": "698:784:0",
+                        "stateMutability": "view",
                         "virtual": false,
                         "visibility": "internal"
                     }
                 ],
                 "scope": 114,
-                "src": "184:1654:0",
+                "src": "184:1659:0",
                 "usedErrors": []
             }
         ],
-        "src": "39:1799:0"
+        "src": "39:1804:0"
     },
     "functionHashes": {
         "owner()": "8da5cb5b",
@@ -1567,7 +1567,7 @@
             "transferOwnership(address)": "24387"
         },
         "internal": {
-            "_calculateTotalPayment(struct SakuraPlan.Plan memory)": "infinite"
+            "_calculateTotalPayment(struct SakuraPlan.Plan storage pointer)": "infinite"
         }
     }
 }

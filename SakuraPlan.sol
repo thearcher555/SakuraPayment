@@ -27,35 +27,36 @@ struct Plan
 //Function to calculate amount due to employee at end of billing period
 //@param _employeePlan 
 //@returns paymentAmount
-function _calculateTotalPayment(Plan memory _employeePlan) pure internal returns(uint128)
+function _calculateTotalPayment(Plan storage _employeePlan) view internal returns(uint256)
 {
 
-    uint128 paymentAmount;
+    uint256 paymentAmount;
 
     if (_employeePlan.wageType == 0)
     {
-        paymentAmount = uint128(_employeePlan.workerHours * _employeePlan.payRate);
+        paymentAmount = uint256(_employeePlan.workerHours * _employeePlan.payRate);
     }
 
     else if (_employeePlan.wageType == 1)
     {
-        paymentAmount = uint128((_employeePlan.billingPeriod/31536000)*_employeePlan.salary);
+        paymentAmount = uint256((_employeePlan.billingPeriod/31536000)*_employeePlan.salary);
     }
 
     else if (_employeePlan.wageType == 2)
     {
-        paymentAmount = uint128(((_employeePlan.billingPeriod/31536000)*_employeePlan.salary) + (_employeePlan.commissionValue * _employeePlan.commissionRate));
+        paymentAmount = uint256(((_employeePlan.billingPeriod/31536000)*_employeePlan.salary) + (_employeePlan.commissionValue * _employeePlan.commissionRate));
     }
 
     else if (_employeePlan.wageType == 3)
     {
-        paymentAmount = uint128(_employeePlan.salary);
+        paymentAmount = uint256(_employeePlan.salary);
     }
 
 
 return paymentAmount;
 
 }
+
 
 /** 
 Function to calculate the net payment of an employee

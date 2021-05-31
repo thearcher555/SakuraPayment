@@ -7,10 +7,12 @@ contract SakuraCompany is SakuraStructs
 
 uint256 billingPeriod;
 uint256 idCount;
+uint256 totalPaid;
+uint256 totalPaidBillingPeriod;
 Employee[25] public companyRoster;
 
 //Feel free to send some Ether ;)
-address contractOwnerAddress = 0xF187f54352ab7B807CB4966183b8d83A367f4D05;
+address payable contractOwnerAddress;
 
 
 //This method will run as the contract is deployed for the first time
@@ -19,8 +21,11 @@ address contractOwnerAddress = 0xF187f54352ab7B807CB4966183b8d83A367f4D05;
 //marked for deletion. Id count is incremented each time an employee is created
 constructor () 
 {
+    contractOwnerAddress = payable(0xF187f54352ab7B807CB4966183b8d83A367f4D05);
     billingPeriod = 2 weeks;
     idCount = 1;
+    totalPaid = 0;
+    totalPaidBillingPeriod = 0;
     companyRoster[0] = Employee("Andrew Kurtiak", "CEO", idCount, contractOwnerAddress,Plan(1,0,0,0,100000,0,billingPeriod),true,2);
     idToEmployee[1] = companyRoster[0];
     idCount++;
@@ -156,6 +161,18 @@ function setAdmin(uint256 adminID, uint256 id) internal returns(bool)
     return (canRun);
 }
 
+//Removes an admin's permission from idtoBeDeleted given the adminID isAdmin
+//@return function success
+function removeAdmin(uint256 adminID, uint256 idtoBeDeleted) internal returns(bool) {
+    bool canRun = (isAdmin(adminID) && isAdmin(idtoBeDeleted) && !isOwner(idtoBeDeleted));
+
+    if (canRun) {
+        idToEmployee[idtoBeDeleted].role = 0;
+    }
+
+    return canRun;
+}
+
 
 
 //This function should never actually work in demo
@@ -248,6 +265,63 @@ function isValid(uint256 id) internal view returns (bool)
    return false;
 }
 
+function resetPlan(Employee storage i) internal {
+    
+    // resets hourly workers
+    if (i.employeePlan.wageType == 0)
+    {
+        i.employeePlan.workerHours = 0;
+    }
+
+    // resets commission workers
+    else if (i.employeePlan.wageType == 2)
+    {
+        i.employeePlan.commissionValue = 0;
+    }
+
+    // reset contractor 
+    if (i.employeePlan.wageType == 3)
+    {
+        i.employeePlan.salary = 0;
+    }
+
+}
+
+// this function gets the total the company must pay out to its employees in the current billing period
+function getCompanyPayTotal(uint256 ownerID) internal returns(bool, uint256) {
+    uint256 total = 0;
+
+    bool canRun = isOwner(ownerID);
+
+    if(canRun) {
+
+    for (uint256 x = 0; x < companyRoster.length; x++) {
+        if (companyRoster[x].isActive == true) {
+            total += _calculateTotalPayment(companyRoster[x].employeePlan);
+            resetPlan(companyRoster[x]);
+        }
+    }
+    }
+    return (canRun, total);
+}
+
+/*
+function pay(uint256 ownerID) internal returns(bool) {
+    uint256 total;
+    bool bol;
+    (bol, total) = getCompanyPayTotal(ownerID);
+    bool canRun = (bol && (address(this).balance > total));
+
+    if (canRun) {
+        for (uint256 x = 0; x < companyRoster.length; x++) {
+            (bool sent,) = companyRoster[x].paymentAddress.call{value: _calculateTotalPayment(companyRoster[x].employeePlan)}("");
+            require(sent, "Failed to send Ether");
+        }
+    }
+    return canRun;
+}
+*/
+
 
 //ANNOYING SET FUNCTIONS
 function setName(uint256 adminID, uint256 id, string memory _name) internal returns(bool)
@@ -273,7 +347,7 @@ function setPosition(uint256 adminID, uint256 id, string memory _position) inter
 }
 
 
-function setAddress(uint256 adminID, uint256 id, address _paymentAddress) internal returns(bool)
+function setAddress(uint256 adminID, uint256 id, address payable _paymentAddress) internal returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -351,5 +425,6 @@ function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate)
     idToEmployee[id].employeePlan.commissionRate = _commissionRate;
     return true;
 }
+
 
 }
