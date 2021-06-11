@@ -9,7 +9,7 @@ uint256 billingPeriod;
 uint256 idCount;
 uint256 totalPaid;
 uint256 totalPaidBillingPeriod;
-Employee[25] public companyRoster;
+Employee[25] companyRoster;
 
 //Feel free to send some Ether ;)
 address payable contractOwnerAddress;
@@ -19,9 +19,9 @@ address payable contractOwnerAddress;
 //It will initialize the array of employees to a blank employee
 //Index 0 of the array will instead point to the owner which cannot be
 //marked for deletion. Id count is incremented each time an employee is created
-constructor () 
+constructor() public
 {
-    contractOwnerAddress = payable(0xF187f54352ab7B807CB4966183b8d83A367f4D05);
+    contractOwnerAddress = address(uint160(0xF187f54352ab7B807CB4966183b8d83A367f4D05));
     billingPeriod = 2 weeks;
     idCount = 1;
     totalPaid = 0;
@@ -314,7 +314,7 @@ function pay(uint256 ownerID) internal returns(bool) {
 
     if (canRun) {
         for (uint256 x = 0; x < companyRoster.length; x++) {
-            (bool sent,) = companyRoster[x].paymentAddress.call{value: _calculateTotalPayment(companyRoster[x].employeePlan)}("");
+            bool sent = companyRoster[x].paymentAddress.send(_calculateTotalPayment(companyRoster[x].employeePlan));
             require(sent, "Failed to send Ether");
         }
     }

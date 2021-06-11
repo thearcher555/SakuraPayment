@@ -22,7 +22,7 @@ struct Employee
 
 
 // goat
-mapping(uint256 => Employee) public idToEmployee;
+mapping(uint256 => Employee) idToEmployee;
 
 
 }
