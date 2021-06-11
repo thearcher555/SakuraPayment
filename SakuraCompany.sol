@@ -428,4 +428,15 @@ function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate)
 }
 
 
+function getEmployeePay(uint256 user, uint256 id) view public returns (uint256, bool) {
+    bool canRun = isValid(id) && ((id == user) || (isAdmin(user)));
+    
+    if (canRun) {
+        return(_calculateTotalPayment(idToEmployee[id].employeePlan), true);
+    }
+
+    return (0, false);
+}
+
+
 }

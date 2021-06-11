@@ -1,7 +1,6 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.5.16;
 
-
 //Contract to handle the payment of an employee
 contract SakuraPlan
 {
@@ -11,7 +10,7 @@ contract SakuraPlan
 struct Plan
 {
     // 0 = Hourly 
-    // 1 = Salaried
+    // 1 = Salarieds
     // 2 = Comission
     // 3 = Contactor
     uint8 wageType;
