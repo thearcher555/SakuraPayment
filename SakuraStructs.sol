@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.4;
+pragma solidity ^0.5.16;
 import "./SakuraPlan.sol";
 
 contract SakuraStructs is SakuraPlan

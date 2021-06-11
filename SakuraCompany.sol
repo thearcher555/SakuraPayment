@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.4;
+pragma solidity ^0.5.16;
 import "./SakuraStructs.sol";
 
 contract SakuraCompany is SakuraStructs
@@ -305,7 +305,7 @@ function getCompanyPayTotal(uint256 ownerID) internal returns(bool, uint256) {
     return (canRun, total);
 }
 
-/*
+
 function pay(uint256 ownerID) internal returns(bool) {
     uint256 total;
     bool bol;
@@ -320,7 +320,7 @@ function pay(uint256 ownerID) internal returns(bool) {
     }
     return canRun;
 }
-*/
+
 
 
 //ANNOYING SET FUNCTIONS
