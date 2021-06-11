@@ -56,7 +56,7 @@ function addEmployee(uint256 adminID,
     uint8 payRate,
     uint32 commissionValue,
     uint128 salary,
-    uint256 commissionRate) internal returns (bool)
+    uint256 commissionRate) public returns (bool)
 {
     int index = findSlot();
     if(isAdmin(adminID) == false)
@@ -80,7 +80,7 @@ function addEmployee(uint256 adminID,
 //Sets employee's isActive to false
 //This will then exclude them from the display
 //If employee array is full, the next add call will overwrite employee data
-function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal returns(bool)
+function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) public returns(bool)
 {
     bool canRun = (isAdmin(adminID) && isValid(idToBeDeleted));
 
@@ -96,7 +96,7 @@ function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) internal returns
 
 // plan starts at 5th return val
 // FIRST INT TO CHECK FOR VALIDITY
-function getProfile(uint256 id) internal view returns (
+function getProfile(uint256 id) public view returns (
     bool,
     string memory,
     string memory,
@@ -127,7 +127,7 @@ function getProfile(uint256 id) internal view returns (
 }
 
 //Returns number of active employees for JS to display
-function getActiveEmployees() internal view returns (uint) {
+function getActiveEmployees() public view returns (uint) {
     uint count = 0;
 
     for (uint x = 0; x < companyRoster.length; x++) {
@@ -141,7 +141,7 @@ function getActiveEmployees() internal view returns (uint) {
 
 //Sets a new admin given the adminID isAdmin and newId isValid
 //@return function success
-function setAdmin(uint256 adminID, uint256 id) internal returns(bool)
+function setAdmin(uint256 adminID, uint256 id) public returns(bool)
 {
     bool canRun = isAdmin(adminID);
 
@@ -163,7 +163,7 @@ function setAdmin(uint256 adminID, uint256 id) internal returns(bool)
 
 //Removes an admin's permission from idtoBeDeleted given the adminID isAdmin
 //@return function success
-function removeAdmin(uint256 adminID, uint256 idtoBeDeleted) internal returns(bool) {
+function removeAdmin(uint256 adminID, uint256 idtoBeDeleted) public returns(bool) {
     bool canRun = (isAdmin(adminID) && isAdmin(idtoBeDeleted) && !isOwner(idtoBeDeleted));
 
     if (canRun) {
@@ -177,7 +177,8 @@ function removeAdmin(uint256 adminID, uint256 idtoBeDeleted) internal returns(bo
 
 //This function should never actually work in demo
 //Intended to set a new owner, changing the current owner
-function setNewOwner(uint256 adminID, uint256 newOwner) internal returns(bool)
+/*
+function setNewOwner(uint256 adminID, uint256 newOwner) public returns(bool)
 {
     bool canRun = isValid(newOwner) && isOwner(adminID) && (adminID != newOwner);
 
@@ -190,11 +191,11 @@ function setNewOwner(uint256 adminID, uint256 newOwner) internal returns(bool)
 
     return (false);
 
-}
+} */
 
 
 //Function takes in new billing period and sets all employees to billing period
-function setBillingPeriod(uint256 time, uint256 adminID) internal 
+function setBillingPeriod(uint256 time, uint256 adminID) public 
 {
     if (isAdmin(adminID))
     {
@@ -204,7 +205,7 @@ function setBillingPeriod(uint256 time, uint256 adminID) internal
 } 
 
 //Helper method for setBillingPeriod
-function changeEmployeeBillingPeriod(uint256 adminID) internal
+function changeEmployeeBillingPeriod(uint256 adminID) public
 {
 
     if (isAdmin(adminID))
@@ -288,7 +289,7 @@ function resetPlan(Employee storage i) internal {
 }
 
 // this function gets the total the company must pay out to its employees in the current billing period
-function getCompanyPayTotal(uint256 ownerID) internal returns(bool, uint256) {
+function getCompanyPayTotal(uint256 ownerID) public returns(bool, uint256) {
     uint256 total = 0;
 
     bool canRun = isOwner(ownerID);
@@ -306,7 +307,7 @@ function getCompanyPayTotal(uint256 ownerID) internal returns(bool, uint256) {
 }
 
 
-function pay(uint256 ownerID) internal returns(bool) {
+function pay(uint256 ownerID) public returns(bool) {
     uint256 total;
     bool bol;
     (bol, total) = getCompanyPayTotal(ownerID);
@@ -324,7 +325,7 @@ function pay(uint256 ownerID) internal returns(bool) {
 
 
 //ANNOYING SET FUNCTIONS
-function setName(uint256 adminID, uint256 id, string memory _name) internal returns(bool)
+function setName(uint256 adminID, uint256 id, string memory _name) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -335,7 +336,7 @@ function setName(uint256 adminID, uint256 id, string memory _name) internal retu
     return true;
 }
 
-function setPosition(uint256 adminID, uint256 id, string memory _position) internal returns(bool)
+function setPosition(uint256 adminID, uint256 id, string memory _position) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -347,7 +348,7 @@ function setPosition(uint256 adminID, uint256 id, string memory _position) inter
 }
 
 
-function setAddress(uint256 adminID, uint256 id, address payable _paymentAddress) internal returns(bool)
+function setAddress(uint256 adminID, uint256 id, address payable _paymentAddress) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -359,7 +360,7 @@ function setAddress(uint256 adminID, uint256 id, address payable _paymentAddress
 }
 
 
-function setWageType(uint256 adminID, uint256 id, uint8 _wageType) internal returns(bool)
+function setWageType(uint256 adminID, uint256 id, uint8 _wageType) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -371,7 +372,7 @@ function setWageType(uint256 adminID, uint256 id, uint8 _wageType) internal retu
 }
 
 
-function setWorkerHours(uint256 adminID, uint256 id, uint32 _workerHours) internal returns(bool)
+function setWorkerHours(uint256 adminID, uint256 id, uint32 _workerHours) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -382,7 +383,7 @@ function setWorkerHours(uint256 adminID, uint256 id, uint32 _workerHours) intern
     return true;
 }
 
-function setPayRate(uint256 adminID, uint256 id, uint32 _payRate) internal returns(bool)
+function setPayRate(uint256 adminID, uint256 id, uint32 _payRate) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -393,7 +394,7 @@ function setPayRate(uint256 adminID, uint256 id, uint32 _payRate) internal retur
     return true;
 }
 
-function setCommissionValue(uint256 adminID, uint256 id, uint32 _commissionValue) internal returns(bool)
+function setCommissionValue(uint256 adminID, uint256 id, uint32 _commissionValue) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -404,7 +405,7 @@ function setCommissionValue(uint256 adminID, uint256 id, uint32 _commissionValue
     return true;
 }
 
-function setSalary(uint256 adminID, uint256 id, uint128 _salary) internal returns(bool)
+function setSalary(uint256 adminID, uint256 id, uint128 _salary) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
@@ -415,7 +416,7 @@ function setSalary(uint256 adminID, uint256 id, uint128 _salary) internal return
     return true;
 }
 
-function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate) internal returns(bool)
+function setCommissionRate(uint256 adminID, uint256 id, uint256 _commissionRate) public returns(bool)
 {
     if (isAdmin(adminID) == false || isValid(id) == false)
     {
