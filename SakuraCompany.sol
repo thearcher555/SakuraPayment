@@ -93,7 +93,7 @@ function deleteEmployee(uint256 adminID, uint256 idToBeDeleted) public returns(b
 }
 
 
-
+/*
 // plan starts at 5th return val
 // FIRST INT TO CHECK FOR VALIDITY
 function getProfile(uint256 id) public view returns (
@@ -124,6 +124,124 @@ function getProfile(uint256 id) public view returns (
         return(temp, "", "", 0, contractOwnerAddress,0, 0, 0,0, 0, 0, 0);
        }
     
+} */
+
+function getEmployeeName(uint256 access, uint256 id) public view returns (bool, string memory) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].name);
+    }
+
+    return(false, "null");
+}
+
+function getEmployeePosition(uint256 access, uint256 id) public view returns (bool, string memory) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].position);
+    }
+
+    return(false, "null");
+}
+
+function getEmployeeID(uint256 access, uint256 id) public view returns (bool, uint256) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeeID);
+    }
+    return(false, 0);
+}
+
+function getEmployeePaymentAddress(uint256 access, uint256 id) public view returns (bool, address payable) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].paymentAddress);
+    }
+
+    return(false, 0xF187f54352ab7B807CB4966183b8d83A367f4D05);
+}
+
+function getEmployeeWageType(uint256 access, uint256 id) public view returns (bool, uint8) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.wageType);
+    }
+    return(false, 10);
+}
+
+function getEmployeeWorkerHours(uint256 access, uint256 id) public view returns (bool, uint32) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.workerHours);
+    }
+
+    return(false, 1);
+}
+
+function getEmployeePayRate(uint256 access, uint256 id) public view returns (bool, uint32) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.payRate);
+    }
+
+    return(false, 1);
+}
+
+function getEmployeeComissionValue(uint256 access, uint256 id) public view returns (bool, uint32) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.commissionValue);
+    }
+
+    return(false, 1);
+}
+
+function getEmployeeSalary(uint256 access, uint256 id) public view returns (bool, uint128) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.salary);
+    }
+
+    return(false, 1);
+}
+
+function getEmployeeComissionRate(uint256 access, uint256 id) public view returns (bool, uint256) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].employeePlan.commissionRate);
+    }
+
+    return(false, 1);
+}
+
+function getEmployeeRole(uint256 access, uint256 id) public view returns (bool, uint8) {
+
+    bool canRun = isValid(id) && ((id == access) || (isAdmin(access)));
+
+    if (canRun) {
+        return(canRun, idToEmployee[id].role);
+    }
+
+    return(false, 1);
 }
 
 //Returns number of active employees for JS to display
